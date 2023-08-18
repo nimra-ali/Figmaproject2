@@ -11,14 +11,14 @@ function Text() {
         <div className='paragraph'>
             <p className='text-p'><b className='color'>Cottage</b> will help you reach more customers and simplify managing your site, 
             your menus, and your orders, letting you focus on delivering great food.</p>
+           
+
            <div className='bttn1'>
  <button className='text-btn1'>GET STARTED</button>
            </div>
            <div className='bttn'>
   <button className='text-btn2'>LEARN MORE</button>
            </div>
-           
-
         </div>
         <div className='flex'>
         <div className='img-div'>

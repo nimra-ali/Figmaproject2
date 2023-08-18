@@ -116,46 +116,47 @@ border: 1px solid;
 }
 @media(max-width:700px){
     .heading{
-        margin-top: 33%;
+        margin-top: 21%;
         margin-left: -8px;
     }
  .text-p{
-    text-align: center;
-    margin-left: -18%;
+    margin-top: -11px;
     font-weight: 400;
-    /* font-size: 17px; */
+    margin-right: 18px;
  }   
- .color{
-    margin-left: -21px;
- }
- .bttn1{
-margin-top: 10%;
- }
+ /* .color{ */
+    /* margin-right: 15px; */
+    /* margin-top: 8px; */
+ /* } */
+ /* .bttn1{ */
+/* margin-top: 10%; */
+ /* } */
  .text-btn1{
-    width: 350px;
+    width: 270px;
     height: 66px;
-    margin-left: -15%;
+    margin-left: -6%;
  }
  .bttn{
     margin-top: 10%;
  }
  .text-btn2{
-    width: 350px;
+    width: 270px;
     height: 66px;
+    /* margin-left: -6%; */
     margin-top: -10px;
-    margin-left: -111%;
+    margin-left: -97%;
  }
  
  .img-div{
  
- margin-top: 39%;
+ margin-top: 31%;
  margin-left: -29%;
  }
  .hero-img{
-    width: 470px;
+    width: 420px;
     height: 600px;
  }
  .dots{
-    margin-left: 81%;
+    margin-left: 70%;
  }
 }
