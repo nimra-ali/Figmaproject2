@@ -1,0 +1,161 @@
+.text-main{
+    /* border: 1px solid black ; */
+    width: 398px;
+    height: 356px;
+    margin-top: -19%;
+    margin-left: 18%;
+}
+.heading{
+    width: 320px;
+    height: 120px;
+
+}
+.text-h1{
+   
+    font-weight: 800;
+    font-size: 37px;
+    color: #192E46;
+    margin-top: -2px;
+}
+.decor{
+    margin-top: -50px;
+    margin-left: 70px;
+    text-decoration: underline;
+}
+.paragraph{
+    width: 320px;
+    height: 80px;
+    /* border: 1px solid black; */
+    margin-top: 60px;
+}
+.text-p{
+    margin-top: -5px;
+    font-weight: 400;
+    color: #192E46;
+}
+.color{
+    color:#FB775A  ;
+}
+.text-btn1{
+width: 140px;
+height: 37px;
+color: #fff;
+border-radius: 3px;
+border: none;
+background-color:#FB775A  ;
+
+}
+.text-btn2{
+width: 140px;
+height: 37px;
+margin-left: 23px;
+background-color: transparent;
+color: #192E46;
+border-radius: 3px;
+border: 1px solid;
+}
+.img-div{
+    margin-top: -91%;
+    margin-left: 70%;
+}
+.hero-img{
+    /* margin-top: -20%; */
+    width: 700px;
+    height: 622.60px;
+}
+.dots{
+    width: 30px;
+    height: 120px;
+    /* border: 1px solid black; */
+    margin-left: 250%;
+    margin-top: -95%;
+}
+.dot1{
+    width: 18px;
+    height: 20px;
+    background-color: #FB775A;
+   
+    margin-left: 5px;
+    border-radius: 28px;
+}
+.dot2{
+    width: 7px;
+    height: 7px;
+    margin-left: 7.99px;
+    margin-top: 13px;
+    border-radius: 28px;
+    border: 3px solid #FB775A ;
+}
+.dot3{
+    width: 7px;
+    height: 7px;
+    margin-left: 7.99px;
+    margin-top: 13px;
+    border-radius: 28px;
+    border: 3px solid #FB775A ;
+}
+.dot4{
+    width: 7px;
+    height: 7px;
+    margin-left: 7.99px;
+    margin-top: 13px;
+    border-radius: 28px;
+    border: 3px solid #FB775A ;
+}
+.dot5{
+    width: 7px;
+    height: 7px;
+    margin-left: 7.99px;
+    margin-top: 13px;
+    border-radius: 28px;
+    border: 3px solid #FB775A ;
+}
+.bttn{
+    margin-left: 46%;
+    margin-top: -12%;
+}
+@media(max-width:700px){
+    .heading{
+        margin-top: 33%;
+        margin-left: -8px;
+    }
+ .text-p{
+    text-align: center;
+    margin-left: -18%;
+    font-weight: 400;
+    /* font-size: 17px; */
+ }   
+ .color{
+    margin-left: -21px;
+ }
+ .bttn1{
+margin-top: 10%;
+ }
+ .text-btn1{
+    width: 350px;
+    height: 66px;
+    margin-left: -15%;
+ }
+ .bttn{
+    margin-top: 10%;
+ }
+ .text-btn2{
+    width: 350px;
+    height: 66px;
+    margin-top: -10px;
+    margin-left: -111%;
+ }
+ 
+ .img-div{
+ 
+ margin-top: 39%;
+ margin-left: -29%;
+ }
+ .hero-img{
+    width: 470px;
+    height: 600px;
+ }
+ .dots{
+    margin-left: 81%;
+ }
+}

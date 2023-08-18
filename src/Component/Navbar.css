@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-main{
+    
+    width: 100%;
+    background-color:#FB775A ;
+    height: 100vh;  
+    background-size: cover;
+    background-image: url('./Images/bg-white.png');
+  }
+ 
+
+ .nav-div{ 
+    width: 96%;
+    margin-left: 2%;
+   
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+   
+ }
+.logo{
+    width: 137px;
+    height: 43px;
+    margin-top: 14px;
+}
+.nav-btn{
+    width: 120px;
+    height: 34px;
+    margin-top: 14px;
+    margin-right: 19px;   
+    color:  #192E46;
+    border: 1.4px solid  #192E46;
+    background-color: transparent;
+    border-radius: 4px; 
+}  
+@media(max-width:700px){
+    .nav-btn{
+        margin-left: 10%;
+    }
+}
