@@ -279,7 +279,7 @@
         .facebook,
         .twiter {
             width: 100%; 
-            margin-left: 0;
-            margin-bottom: 10px; 
+            /* margin-left: 0; */
+            /* margin-bottom: 10px;  */
         }
     }
