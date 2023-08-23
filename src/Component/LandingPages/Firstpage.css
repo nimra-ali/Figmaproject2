@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    /* height: auto; */
+    background-color: #F37357; 
+  background-image: url('../Images/bg-white.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.content{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dot{
+    width: 180px;
+    height: 400px;
+    margin-bottom: 8%;
+    /* border: 2px solid red; */
+    /* background-image: url('../../Assest/dot.png'); */
+}
+.dots{
+    width: 180px;
+    height: 400px;
+}
+.takeMeal{
+    width: 500px;
+    height: 477px;
+    margin-bottom: 10%
+}
+.mealText{
+    color: #192E46;
+text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 900;
+text-align: start;
+line-height: 78px;
+padding-bottom: 30px;
+}
+.mealText span{
+    color: #192E46;
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 800;
+line-height: 78px;
+text-decoration-line: underline;
+}
+.mealPara{
+    color: #4C6889;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 29px;
+text-align: start;
+padding-bottom: 50px;
+}
+.mealPara span{
+    color: #F37357;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+cursor: pointer;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+.started{
+    margin-left: 0px;
+    /* margin-left: 10px; */
+     width: 210px;
+ height: 62px;
+ flex-shrink: 0;
+ border-radius: 4px;
+ background: #F37357;
+ color: white;
+ border: none;
+}
+ .more{
+    width: 210px;
+ height: 62px;
+    border-radius: 4px;
+    border: 1px solid #192E46;
+    background-color: white;
+    color: #192E46;
+text-align: center;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 157.5%; /* 28.35px */
+letter-spacing: 0.18px;
+margin-left: 30px;
+}
+.overView{
+    width: 800px;
+    /* height: auto; */
+    margin-top: 30px;
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.pinkDots{
+    width: 30px;
+    height: 200px;
+    /* border: 2px solid #4C6889; */
+}
+.homepage{
+    width: 90%;
+    /* height: 880%; */
+}
+
+@media (max-width: 768px) {
+    .main{
+      width: 100%;
+      /* height: auto; */
+    }
+    
+    .content{
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 10px;
+        /* border: 2px solid purple; */
+    }
+.dot{
+       display: none;
+    }
+    .takeMeal {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 1%;
+    }
+
+    .mealText {
+        font-size: 40px; 
+        line-height: 50px; 
+        text-align: center;
+    }
+
+    .mealText span {
+        font-size: 45px; 
+        line-height: 55px; 
+    }
+
+    .mealPara {
+        font-size: 20px; 
+        line-height: 25px; 
+        text-align: center;
+    }
+
+    .mealPara span {
+        font-size: 22px; 
+        line-height: 27px;
+    }
+    .pinkDots{
+        margin-bottom: 30%;
+    }
+
+    .button {
+        flex-direction: column; 
+        align-items: flex-start; 
+        justify-content: flex-start;
+    }
+
+    .started,
+    .more {
+        width: 100%; 
+        margin: 10px 0; 
+    }
+    .overView{
+        width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-bottom: 30% */
+    }
+    .pink{
+        width: 20px;
+        height: 200px;
+           }
+
+}

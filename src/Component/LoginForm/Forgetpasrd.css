@@ -1,0 +1,154 @@
+.forgetpswd{
+    background-color: #FB775A;
+    background-image: url('../Images/bg.png');
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; 
+    width: 100%;
+}
+.forgetlogo{
+    display: flex;
+    justify-content: center;
+}
+.forgetform{
+    margin-top: 13px;
+    width: 545px;
+    height: auto;
+    background: #fff;
+box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.15);
+    /* background-color: #FB775A; */
+    /* top: 304.4609375px; */
+    /* left: 639.5px; */
+    /* background-color: #fff; */
+    border: 1px solid #f5dede;
+    
+}
+.formforget{
+    margin: 35px;
+    /* background-color: #FB775A; */
+    border: 1px solid rgb(215, 210, 210);
+    height: 83%;
+}
+.formforget h2{
+    text-align: center;
+    margin-top: 20px;
+    color: #192E46;
+    /* font-family: Poppins; */
+font-size: 24px;
+font-weight: 700;
+line-height: 36px;
+letter-spacing: -0.02em;
+text-align: center;
+
+}
+.formforget input{
+    width: 85%;
+ 
+height: 46px;
+top: 492.4140625px;
+margin:35px;
+padding: 19px;
+left: 749.5px;
+
+border-radius: 4px;
+border: 1px solid salmon;
+/* angle: -0 deg; */
+margin-bottom: 25px;
+}
+.formforget input:hover{
+    border: 2px solid salmon ;
+}
+.formforget p{
+    width:400px;
+    /* height: 70px; */
+    color: #FB775A;
+    background-color: #FFE2E2;
+    margin:35px;
+    /* font-family: Poppins; */
+font-size: 15px;
+font-weight: 500;
+line-height: 20px;
+letter-spacing: 0.01em;
+/* text-align: left; */
+border-radius: 5px;
+
+}
+.formforget button{
+    width: 85%;
+height: 46px;
+background-color: #FB775A;
+color: #fff;
+margin:-5% 35px;
+top: 558.595703125px;
+left: 749.5px;
+border-radius: 4px;
+border: none;
+/* font-family: Poppins; */
+font-size: 14px;
+font-weight: 600;
+line-height: 21px;
+letter-spacing: 0.01em;
+/* text-align: left; */
+
+}
+.forgetlist{
+    /* background-color: aqua; */
+    margin:35px;
+    /* cursor: pointer; */
+    margin-top: 58px;
+    text-align: center;
+    color: #FB775A;
+    /* font-family: Poppins; */
+font-size: 14px;
+font-weight: 600;
+line-height: 28px;
+letter-spacing: 0.01em;
+/* text-align: left; */
+}
+/* .cross{
+
+} */
+.forgetlist h3{
+    cursor: pointer;
+    /* background-color: #192E46; */
+}
+@media (max-width:768px){
+    .forgetform input{
+        margin:22px;
+        /* margin-bottom: -21px; */
+    }
+    .forgetform{
+        width: auto;
+        margin-left: 10%;
+    }
+    .forgetform button{
+        margin:-6px 22px;
+
+    }
+    .forgetlist{
+        margin:30px;
+        cursor: pointer;
+        margin-top: 58px;
+        text-align: center;
+        color: #FB775A;
+    font-size: 10px;
+    font-weight:800;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    
+    }
+    .formforget{
+        
+    margin: 20px
+    }
+    .formforget p{
+        width:83%;
+    
+        margin-left: 25px;
+    }
+
+}

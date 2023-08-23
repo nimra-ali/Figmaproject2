@@ -1,0 +1,47 @@
+.list2{
+    /* background-color: aqua; */
+    margin-top: 25px;
+    margin-bottom: 16px;
+    color: #192E46;
+}
+.list2 h4{
+    color: #FB775A;
+}
+.ib{
+    /* background-color: aqua; */
+    margin-top: 5px;
+
+}
+.ib input{
+    text-align: center;
+    color: #626972;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    /* text-align: left; */
+    
+}
+.part2{
+    height: auto;
+    /* background-color: blue; */
+}
+.verifyh5{
+    /* background-color: #FB775A; */
+    margin-top: 45px;
+    margin-bottom: 15px;
+    /* text-align: center; */
+ 
+
+/* font-family: Poppins; */
+font-size: 16px;
+font-weight: 500;
+line-height: 21px;
+letter-spacing: 0.01em;
+text-align: center;
+
+}
+.verifyh5 span{
+    color: #FB775A;
+}

@@ -1,27 +1,24 @@
-import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import './Navbar.css'
-import Ellipse from './Ellipse'
-import pic from './Images/LOGO (1).png'
-import Text from './Text'
+const Navbar = () => {
+    const navigate = useNavigate();
 
-function Navbar() {
-  return (
-   
-    <div className='nav-main'>
-  <div className='nav-div'>
-      
-  <div>
-    <img className='logo' src={pic} alt='pic1'/>
-    </div>
-  <div>
-      <button className='nav-btn'>SIGN IN</button>
-      </div>
-  </div>
-  <Ellipse/>
-  <Text/>
-   </div>
-   
-  )
+    const handleForm = () => {
+        navigate('/signUp')
+    }
+    return (
+        <div className='mainnn'>
+
+            <div className="nav">
+                <div>
+
+                    <img className='cottage' src={require('./Images/LOGO (1).png')} alt='cottage' />
+            </div>
+            <div>
+                    <button className='nav-btn' onClick={handleForm}>SIGN IN</button>
+            </div>
+            </div>
+        </div>
+    )
 }
-
-export default Navbar
+export default Navbar;
