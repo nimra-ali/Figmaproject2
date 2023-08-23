@@ -1,16 +1,16 @@
 import './Signup.css'
 import React, { useState } from 'react';
-import { Button, Modal as AntModal } from 'antd';
+import { Button, Modal as AntModal } from 'antd'; // Rename the Modal import to avoid conflicts
 import { useNavigate } from 'react-router-dom';
-
 const SignUp = () => {
-    const Navigate = useNavigate()
+
+const Navigate = useNavigate()
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [address, setAddress] = useState('');
-    const [isModalOpen, setIsModalOpen] = useState(false); 
+    const [confirmPassword, setConfirmPassword] = useState('');
+    const [isModalOpen, setIsModalOpen] = useState(false); // Moved the modal state to the top level
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -28,9 +28,6 @@ const SignUp = () => {
         Navigate('/Loginform');
     }
 
-    const handleverified = () => {
-        Navigate('/Verification')
-    }
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log('Form submitted:', { firstName, lastName, email, password });
@@ -72,29 +69,29 @@ const SignUp = () => {
                                     />
                                     <input
                                         className='address'
-                                        type="text" 
-                                        placeholder="Address"
-                                        value={address}
-                                        onChange={(e) => setAddress(e.target.value)}
+                                        type="text"
+                                        placeholder="password"
+                                        value={password}
+                                        onChange={(e) => setPassword(e.target.value)}
                                     />
                                     <input
                                         className='password'
                                         type="password"
-                                        placeholder="Password"
-                                        value={password}
-                                        onChange={(e) => setPassword(e.target.value)}
+                                        placeholder="Confirm password"
+                                        value={confirmPassword}
+                                        onChange={(e) => setConfirmPassword(e.target.value)}
                                     />
-                                    <button  onClick={handleverified} className='signbutton' type="submit">Sign Up Now</button>
+                                    <button className='signbutton' type="submit" onClick={()=>{Navigate('/Verification')}}>Sign Up Now</button>
                                 </form>
                                 <p className='terms'>By continuing, I agree to Cottage’s <span onClick={showModal}>Terms & Conditions.</span></p>
                                 <div className='connect'>
                                     <p className='line'></p>
-                                    <p className='connect3'>Or Connect With</p>
+                                    <p>Or Connect With</p>
                                     <p className='line'></p>
                                 </div>
                                 <div className='fb-tweet'>
                                     <button className='facebook'>Facebook</button>
-                                    <button className='twitter'>Twitter</button>
+                                    <button className='twitter'>Twitter</button> {/* Corrected the class name */}
                                 </div>
                             </div>
                         </div>
@@ -104,8 +101,8 @@ const SignUp = () => {
 
             {/* Custom Modal */}
             <AntModal
-                title="Terms & Condition"
-                visible={isModalOpen}
+                title="Basic Modal"
+                open={isModalOpen}
                 onOk={handleOk}
                 onCancel={handleCancel}
             >
@@ -116,8 +113,7 @@ const SignUp = () => {
     );
 }
 
-export default SignUp;
-
+export default SignUp
 
 
 // http://zwug.github.io/react-full-page/
