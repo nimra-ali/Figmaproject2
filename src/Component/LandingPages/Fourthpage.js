@@ -17,7 +17,7 @@ const Fourthpage =()=>{
                         <img className='dott' src={require('../Images/Group 211.png')}/>
                     </div>
                     <div className='pinkdot'>
-                        <img src={require('../Images/radio-right.png')}/>
+                        <img src={require('../Images/radio-right (2)4.png')}/>
                     </div>
                 </div>
             </div>

@@ -20,7 +20,7 @@ const Fifthpage =()=>{
                         {/* <img src={require('../../Assest/menu.png')}/> */}
                     </div>
                     <div className='pinkdot'>
-                        <img src={require('../Images/radio-right.png')}/>
+                        <img src={require('../Images/radio-right (4).png')}/>
                     </div>
                 </div>
             </div>
@@ -28,4 +28,4 @@ const Fifthpage =()=>{
     )
 }
 
-export default Fifthpage
+export default Fifthpage;

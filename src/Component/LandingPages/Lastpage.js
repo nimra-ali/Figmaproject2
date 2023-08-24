@@ -12,7 +12,7 @@ const Lastpage = () => {
                     </div>
                     <button className='trackBtn'>GET STARTED</button>
                     <div className='trackImg'>
-                        {/* <img className='trackImg' src={require('../../Assest/trackimg.png')} alt='track'/> */}
+                    {/* <img className='lastdot' src={require('../Images/radio-right (4)5.png')}/> */}
                     </div>
                     <div className='trackimg'>
 
@@ -23,3 +23,8 @@ const Lastpage = () => {
     )
 }
 export default Lastpage
+
+
+
+
+

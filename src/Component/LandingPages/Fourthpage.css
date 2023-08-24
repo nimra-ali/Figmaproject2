@@ -91,6 +91,7 @@ line-height: 29px;
         .menuItemImg{
             width: 100%;
         height: 400px;
+        margin-left: -2%;
         flex-shrink: 0;
         margin-top: 20PX;
         /* border: 2px solid pink; */
@@ -112,7 +113,8 @@ line-height: 29px;
             color: #192E46;
         font-family: Poppins;
         font-size: 45px;
-        text-align: center;
+        margin-left: -2%;
+        /* text-align: center; */
         font-style: normal;
         font-weight: 800;
         line-height: 58px; 
@@ -122,7 +124,8 @@ line-height: 29px;
         font-family: Poppins;
         font-size: 20px;
         font-style: normal;
-        text-align: center;
+        margin-left: -1%;
+        /* text-align: center; */
         font-weight: 400;
         line-height: 29px; 
         margin-top: 30px;

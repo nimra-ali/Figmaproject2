@@ -32,7 +32,7 @@ const GetStart = () => {
                             
                                         <img className='homepage' src={require('../Images/homepage_1.png')}/>
                                         <div className='pinkDots'>
-                                    <img className='pink' src={require('../Images/radio-right.png')}/>
+                                    <img className='pink' src={require('../Images/radio-right1.png')}/>
                                 </div>
                                 </div>
                               
