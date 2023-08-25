@@ -42,10 +42,12 @@ const Navigate = useNavigate()
                         <div className='form'>
                             <div className='sign/loginBtns'>
                                 <button className='signIn' onClick={handleLogin}>Sign In</button>
+                                <div className='SIG'>
                                 <button className='signUps'>Sign Up</button>
+                                </div>
                             </div>
                             <div className='feild'>
-                                <form onSubmit={handleSubmit}>
+                                <form className='form2' onSubmit={handleSubmit}>
                                     <input
                                         className='name'
                                         type="text"
@@ -60,6 +62,7 @@ const Navigate = useNavigate()
                                         value={lastName}
                                         onChange={(e) => setLastName(e.target.value)}
                                     />
+                                    <div className='EEmail'>
                                     <input
                                         className='email'
                                         type="email"
@@ -67,6 +70,8 @@ const Navigate = useNavigate()
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
+                                    </div>
+                                    <div className='AAdress'>
                                     <input
                                         className='address'
                                         type="text"
@@ -74,6 +79,8 @@ const Navigate = useNavigate()
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                     />
+                                    </div>
+                                    <div className='conFirm'>
                                     <input
                                         className='password'
                                         type="password"
@@ -81,18 +88,25 @@ const Navigate = useNavigate()
                                         value={confirmPassword}
                                         onChange={(e) => setConfirmPassword(e.target.value)}
                                     />
+                                    </div>
+                                    <div className='S-BTN'>
                                     <button className='signbutton' type="submit" onClick={()=>{Navigate('/Verification')}}>Sign Up Now</button>
+                                    </div>
                                 </form>
+                                <div className='MModal'>
                                 <p className='terms'>By continuing, I agree to Cottage’s <span onClick={showModal}>Terms & Conditions.</span></p>
+                                </div>
                                 <div className='connect'>
                                     <p className='line'></p>
                                     <p>Or Connect With</p>
                                     <p className='line'></p>
                                 </div>
                                 <div className='fb-tweet'>
+                                    {/* <div></div> */}
                                     <button className='facebook'>Facebook</button>
                                     <button className='twitter'>Twitter</button> {/* Corrected the class name */}
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -101,7 +115,7 @@ const Navigate = useNavigate()
 
             {/* Custom Modal */}
             <AntModal
-                title="Basic Modal"
+                title="Terms & Condition"
                 open={isModalOpen}
                 onOk={handleOk}
                 onCancel={handleCancel}
@@ -113,7 +127,7 @@ const Navigate = useNavigate()
     );
 }
 
-export default SignUp
+export default SignUp;
 
 
 // http://zwug.github.io/react-full-page/

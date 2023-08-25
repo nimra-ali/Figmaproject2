@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './Loginform.css'
 import { useState } from 'react';
+// import Profilepage from '../Profilepage'
 
 const Loginform = () => {
 const navigate = useNavigate()
@@ -27,12 +28,14 @@ const navigate = useNavigate()
         <div>
             <div className='signUpContentt'>
                 <div className='signUpFormm'>
-                    <img className='signLogoo' src={require('../Images/LOGO (1).png')} />
+                    <img className='signLogoo' src={require('../Images/LOGO (2).png')} />
                     <div className='form-Div'>
                         <div className='formm'>
                             <div className='sign/loginBtns'>
                                 <button className='signInn'>Sign In</button>
+                                <div className='SIGNUP'>
                                 <button className='signUpss' onClick={handleSignUp}>Sign Up</button>
+                                </div>
                             </div>
                             <div className='feildd'>
                                 <form onSubmit={handleSubmit}>
@@ -51,12 +54,12 @@ const navigate = useNavigate()
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
                                     />
-                                    <button className='sign-button' type="submit">Sign Up Now</button>
+                                    <button className='sign-button' type="submit"  onClick={()=>{navigate('/Profilepage')}}>Sign In Now</button>
                                 </form>
                                 <p className='forget' onClick={forgetpswrd}>Forget Password?</p>
                             <div className='connected'>
                                 <p className='linee'></p>
-                                <p>Or Connect With</p>
+                                <p className='P-CONECT'> Or Connect With</p>
                                 <p className='linee'></p>
                             </div>
                             <div className='fb-tweeter'>

@@ -1,0 +1,438 @@
+.container1 {
+    background-color: #fff;
+    width: 20px;
+    margin-top: 40px;
+    height: 310px;
+
+    margin-left: 120px;
+
+    /* border: 1px solid black; */
+}
+
+.main-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.pen {
+    margin-left: 95%;
+}
+
+.men {
+    /* width: 50px; */
+    margin-top: 10px;
+    border-radius: 80px;
+    margin-left: 39.98%;
+}
+
+.h2 {
+    color: #192E46;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    line-height: normal;
+    text-align: center;
+}
+
+.PARA {
+    color: #4C6889;
+    margin-top: 10px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.parA2 {
+    color: #4C6889;
+    margin-top: 8px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+}
+
+.buTTon {
+    width: 194px;
+    color: #4C6889;
+    margin-top: 33px;
+    margin-left: 36px;
+    border-radius: 4px;
+    border: 1px solid #D9DEE4;
+    background: #FFF;
+    height: 40px;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.PRA2 {
+    color: #192E46;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.18px;
+
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+.PRA2 span {
+    color: #FB775A;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.18px;
+}
+
+.buTton {
+    margin-top: 3.59%;
+    width: 124px;
+    margin-left: 13%;
+    border-radius: 4px;
+    height: 36px;
+    flex-shrink: 0;
+    background-color: #FB775A;
+    color: #FFF;
+}
+
+.main-card {
+    width: 67.72%;
+    height: 470px;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    margin-top: 9%;
+    margin-left: -37.74%;
+}
+
+.container-box {
+    width: 520px;
+    height: 150px;
+   
+    margin-top: -14%;
+
+    border-radius: 4px;
+    background: #FFF;
+}
+
+.crust-pizza {
+    color: #192E46;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    margin-top: 12px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 13px;
+    letter-spacing: -0.44px;
+}
+
+.for-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bTn {
+    margin-top: 7px;
+    border-radius: 4px;
+    width: 20px;
+    margin-right: 1.55%;
+    height: 29px;
+    border: 1px solid #E0E4E9;
+}
+
+.plus-icon {
+    color: #192E46;
+    margin: -10px;
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+.box-hr {
+    width: 490px;
+    height: 1px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    margin-left: 16px;
+    border-radius: 4px;
+    opacity: 0.2;
+    background: #B2BAC3;
+}
+
+.for-flex2 {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+.namedom ,.namedomm{
+    color: #768CA5;
+    font-family: Poppins;
+    margin-top: 10px;
+    font-size: 13px;
+    font-style: normal;
+    margin-left: 20px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.91px;
+}
+
+
+.domain , .domainn , .domainn22 {
+    margin-top: 10px;
+    color: #768CA5;
+    font-family: Poppins;
+    font-size: 13px;
+    margin-left: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.91px;
+}
+
+.for-flex3 {
+    display: flex;
+}
+
+.namedom1 , .namedom2 , .namedom4{
+    margin-top: 16px;
+    margin-left: 20px;
+    color: #192E46;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.18px
+}
+
+.domain2 , .domain3 , .domain5{
+    margin-top: 16px;
+    margin-left: 20px;
+    color: #192E46;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.18px;
+}
+.bttn{
+    width: 130px;
+    height: 40px;
+    margin-left: 30%;
+    margin-top: 7px;
+    border-radius: 4px;
+    background: #192E46;
+    color: #FFFF;
+}
+.container-box2{
+    width: 520px;
+    height: 230px;
+   
+  margin-top: -30%;
+
+    border-radius: 4px;
+    background: #FFF;
+}
+.bttn2{
+    width: 130px;
+    height: 40px;
+    margin-left: 13%;
+    margin-top: 6px;
+    border-radius: 4px;
+    background: #192E46;
+    color: #FFFF; 
+}
+
+.bttn3{
+    width: 130px;
+    height: 40px;
+    margin-left: 18%;
+    margin-top: 6px;
+    border-radius: 4px;
+    background: #192E46;
+    color: #FFFF; 
+}
+.for-flex4 {
+    display: flex;
+    margin-top: 10px;
+}
+@media(max-width:768px){
+    .logo{
+        margin-left: 10px;
+    }
+    .main-flexx{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container1{
+        width: 200px;
+        height: 400px;
+        margin-left: 7%;
+    }
+    .width{
+        width: 320px;
+        height: 400px;
+        background-color: #FFFF;
+    }
+    .h2{
+        font-size: 27px;
+    }
+    .PARA{
+        font-size: 23px;
+}
+.parA2{
+    margin-top: 17px;
+    font-size: 23px;
+}
+.buTTon{
+    margin-left: 61px;
+}
+    .pen-div{
+    font-size: 31px;
+margin-right: 30px;
+}
+.men{
+    width: 91px;
+    margin-left: 34%;
+    
+}
+.PRA2 {
+    margin-top: 115%;
+    font-size: 26px;
+    font-weight: 900;
+    margin-left: -75px;
+}
+.PRA2 span{
+    font-size: 26px;
+}
+.buTton{
+    margin-top: 1%;
+    width: 310px;
+    font-size: 20px;
+    height: 60px;
+margin-left: 40px;
+}
+.p-div{
+    margin-top: -105;
+}
+.container-box{
+    /* border: 1px solid black; */
+    margin-left: 222%;
+    width: 350px;
+    height: 298px;
+margin-top: -75px;
+}
+.main-card{
+    height: 900px;
+}
+.container-box2{
+    border: 1px solid black;
+    margin-left: 222%;
+    width: 350px;
+    margin-top: -190px;
+    height: 530px;
+}
+
+/* .namedom4{
+    margin-top: -28%;
+} */
+.crust-pizza{
+    font-size: 26px;
+}
+.domainn22{
+    margin-left: -70px;
+    margin-top: 22%;
+    font-size: 22px;
+}
+.box-hr{
+    width: 310px;
+}
+.domain{
+    font-size: 22px;
+    margin-left: -63%;
+    margin-top: 80px;
+ }
+.namedom1{
+    font-size: 22px;
+margin-top: -63px;
+}
+.bttn{
+    width: 320px;
+    font-size: 20px;
+    height: 53px;
+    margin-top: 55px;
+    margin-left: -50%;
+}
+.namedom{
+    font-size: 20px;
+}
+.domainn{
+    font-size: 20px;
+    margin-top: 33%;
+    margin-left: -22%;
+}
+.namedom2{
+    font-size: 17px;
+    /* margin-top: 10px; */
+/* text-align: inline; */
+}
+.DDD{
+    margin-top: 6px;
+}
+.domain2{
+    font-size: 24px;
+margin-left: -70px;
+} 
+.namedomm{
+    font-size: 23px;
+}
+.bttn2{
+    width: 320px;
+    font-size: 20px;
+    height: 53px;
+    margin-top: 16%;
+margin-left: -67%;
+}
+.domain3{
+    font-size: 23px;
+    margin-top: 15px;
+    margin-left: -94px;
+}
+.namedom4{
+    margin-top: -19%;
+
+}
+.domain5{
+    font-size: 23px;
+    margin-left: -22%;
+    margin-top: -1%;
+}
+.bttn3{
+    width: 320px;
+    font-size: 20px;
+    height: 53px; 
+    margin-left: -65%;
+    margin-top: 25px;
+
+}
+
+.bTn{
+    width: 40px;
+    height: 43px;
+    font-size: 23px;
+}
+.p-div{
+    margin-top: -27%;
+}
+}

@@ -1,33 +1,13 @@
-// import React from 'react'
-// import './Verification.css'
-// // import { useNavigate } from 'react-router-dom';
-
-// function Verificaton() {
-  
-  
-//   return (
-//     <div className='forgetpswd'> 
-//     <div className='forget'>
-//     <div className='forgetlogo'><img src={logo} alt='logo'/></div>
-//     <div className='forgetform'>
-
-// </div>
-// </div>
-// </div>
-//   )
-// }
-
-// export default Verificaton;
 import React,{useState} from 'react'
 import './Verification.css'
-import logo from '../Images/LOGO (1).png'
+import logo from '../Images/LOGO (2).png'
 function Verification() {
     const [instruction,setinstruction]= useState('')
 
     const send=(e)=>{
         e.preventDefault();
         // setShow(true)
-        setinstruction("Code did not match, please try again")
+    setinstruction("Code did not match, please try again")
     }
     const handlecross=()=>{
          setinstruction(false)
@@ -48,7 +28,6 @@ Enter the code below to confirm your email address.
     </div>
     <div className='ib'>
     <input type='text' placeholder='Your one time six-digit code'/>
-    {/* <button onClick={send}>Verify Now</button> */}
     {instruction ? (
                             <div>
                                 <button onClick={handlecross}>Cancel</button>
@@ -69,4 +48,4 @@ Enter the code below to confirm your email address.
       )  
 }
 
-export default Verification
+export default Verification;
