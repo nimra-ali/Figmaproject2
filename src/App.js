@@ -30,11 +30,9 @@ function App() {
       <Route path='/Signup' Component={Signup} exact/>
       <Route path='/Loginform' Component={Loginform}/>
       <Route path='/Verification' Component={Verificaton} exact/>
-      {/* <Route path='/' Component={Menu} exact/> */}
+    
      </Routes>
-     {/* <Menu/> */}
-     {/* <Menutwo/> */}
-     {/* <Schedule/> */}
+    
       </div>
   );
 }

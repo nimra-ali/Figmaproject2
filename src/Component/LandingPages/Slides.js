@@ -7,7 +7,7 @@ import Fourthpage from './Fourthpage';
 import Fifthpage from './Fifthpage';
 import Lastpage from './Lastpage'
 import {ISlideConfig, PageSlides, SlideParallaxType} from 'react-page-slides';
-import Profile from '../Profilepage/Profile';
+// import Profile from '../Profilepage/Profile';
 
 
 function Slides() {
@@ -48,12 +48,7 @@ function Slides() {
             </div>,
            
         },
-        {
-            content: <div>
-                <Profile/>
-            </div>,
-           
-        },
+
     ];
     return (
         <div>
