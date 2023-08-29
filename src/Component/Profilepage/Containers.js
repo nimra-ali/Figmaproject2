@@ -1,18 +1,15 @@
 import React , {useState} from 'react';
-import { Button, Layout, Row, Col , Modal  ,Form,
-  Input,
-  Upload,
-  message,} from 'antd';
+import { Button, Layout, Row, Col , Modal  ,Form, Input, Upload,message,} from 'antd';
 import './Container.css';
 import { EditOutlined } from '@ant-design/icons';
 import { PlusOutlined } from '@ant-design/icons';
 import {RightOutlined} from '@ant-design/icons'
-import { useNavigate } from "react-router-dom";
+import {QuestionCircleOutlined} from '@ant-design/icons'
+
 
 const { Content } = Layout;
-
 const Containers = () => {
-  const navigate = useNavigate("");
+  // const navigate = useNavigate("");
   const [visible, setVisible] = useState(false);
   const [editProfile, seteditProfile] = useState(false);
   const [form] = Form.useForm();
@@ -20,10 +17,10 @@ const Containers = () => {
 
   const send = (e) => {
     e.preventDefault();
-    // setShow(true)
     setinstruction(
       "Lorem Ipsum is the standard filler text used in design throughout the world. It’s been the standards since the 1500’s and it’s time for an update."
-    );
+      );
+     
   };
   const handlecross = () => {
     setinstruction(false);
@@ -35,13 +32,9 @@ const Containers = () => {
 
   const hideModal = () => {
     seteditProfile(false);
-    // console.log("close")
+  
   };
 
-  const hideModal2 = () => {
-    seteditProfile(false);
-    console.log("close")
-  };
 
 
   const handleUpload = (info) => {
@@ -56,23 +49,7 @@ const Containers = () => {
     console.log("Received values:", values);
     hideModal();
   };
-  // const [secondModalVisible, setSecondModalVisible] = useState(false);
 
-  // const showSecondModal = () => {
-  //   setSecondModalVisible(true);
-  // };
-  
-  // const handleSecondOk = () => {
-  //   // Add your logic for the second modal "OK" button here
-  //   setSecondModalVisible(false);
-  // };
-  
-  // const handleSecondCancel = () => {
-  //   setSecondModalVisible(false);
-  // };
-
-
-  // const [visible, setVisible] = useState(false);
 
   const showModal = () => {
     setVisible(true);
@@ -165,11 +142,8 @@ const Containers = () => {
                     </div>
                   </div>
 
-                  {/* <Button onClick={send} className='signbutton tel'>
-Save changes
-</Button>: */}
-                  <Button className="signbutton tel"  onClick={hideModal2}>
-                    <h4 className="changes">save changes</h4>
+                  <Button className="signbutton tel"  onClick={send}>
+                    <h4 className="changes" >Save Changes</h4>
                   </Button>
 
                   {instruction ? (
@@ -186,36 +160,13 @@ Save changes
                           color: "#192E46",
                         }}
                       />
-                      Need help?
+                     <QuestionCircleOutlined/> Need help?
                     </h3>
                   )}
                 </div>
               </Form>
             </Modal>
 
-
-            {/* <Modal
-  title= "Edit profile"
-  visible={secondModalVisible}
-  onOk={handleSecondOk}
- onCancel ={handleSecondCancel}
-  okText="OK"
- cancelText="Cancel"
->
-  <div className='icon-men'>
-<img className='icon-two' src={require('../Images/Vector (4).png')} /> 
-    
-  </div>
-
-<div className='input-parent'>
-
-  <label className='grey'>FirstName</label>
-  <input type='name' />
-
-  <label className='grey'>LastName</label>
-  <input type='name' />
-</div>
-</Modal> */}
             <img className='men' src={require('../Images/man.png')} />
             <h2 className='h2'>Jonathan Snow</h2>
             <p className='PARA'>jonathan.s45@gmail.com</p>

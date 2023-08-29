@@ -16,7 +16,8 @@ align-items: center;
 justify-content: space-between;
 }
 .menuPlanImg{
-    width: 630px;
+    /* width: auto; */
+    width: 760px;
 height: 728px;
 flex-shrink: 0;
 /* border: 2px solid pink; */
@@ -30,10 +31,12 @@ box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 
     height: 400px;
     /* border: 2px solid rgb(41, 148, 81); */
 }
-.dott{
-    width: 200px;
-    height: 500px;
-    margin-right: 30px;
+.dott4{
+    width: 220px;
+    margin-top: 62px;
+    height: 410px;
+    margin-left: -30%;
+    /* margin-right: 60px; */
     /* border: 2px solid black; */
 }
 .pinkdot{
@@ -41,27 +44,31 @@ box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 
     margin-left: 2%;
     
 }
-.menuHead{
+.menuHead4{
     color: #192E46;
-font-family: Poppins;
-font-size: 58px;
-font-style: normal;
+/* font-family: Poppins; */
+font-size: 40px;
+margin-left: -22%;
+
+/* font-style: normal; */
 font-weight: 800;
-line-height: 58px; 
+/* line-height: 58px;  */
 }
-.menuPara{
+.menuPara4{
     color: #4C6889;
-font-family: Poppins;
-font-size: 24px;
-font-style: normal;
-font-weight: 400;
-line-height: 29px; 
+margin-left: -22%;
+
+/* font-family: Poppins; */
+font-size: 16px;
+/* font-style: normal; */
+font-weight: 500;
+/* line-height: 29px;  */
 margin-top: 50px;
 }
-.menuPara span{
+.menuPara4 span{
     color: #FB775A;
-font-family: Poppins;
-font-size: 24px;
+/* font-family: Poppins; */
+font-size: 17px;
 font-style: normal;
 font-weight: 600;
 line-height: 29px;
@@ -86,7 +93,7 @@ line-height: 29px;
         justify-content: space-between;
         flex-wrap: wrap;
         }
-        .dott{
+        .dott4{
             display: none;
         }
         .menuPlanImg{
@@ -110,18 +117,18 @@ line-height: 29px;
         .pinkdot{
            display: none;
         }
-        .menuHead{
+        .menuHead4{
             color: #192E46;
-        font-family: Poppins;
+        /* font-family: Poppins; */
         font-size: 45px;
         text-align: center;
         font-style: normal;
         font-weight: 800;
         line-height: 58px; 
         }
-        .menuPara{
+        .menuPara4x{
             color: #4C6889;
-        font-family: Poppins;
+        /* font-family: Poppins; */
         font-size: 20px;
         font-style: normal;
         text-align: center;

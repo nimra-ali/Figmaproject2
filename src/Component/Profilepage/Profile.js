@@ -3,19 +3,21 @@ import './Profile.css'
 import { Menu, Dropdown, Button, Layout } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
 import logo4 from '../Images/LOGO (1).png'
-import logo6 from '../Images/avatar (1).png'
+import logo6 from '../Images/man.png'
 import Containers from './Containers';
-// import 'antd/dist/antd.css';
-// import { Profiler } from 'react';
+import {UserOutlined} from '@ant-design/icons'
+import {QuestionCircleOutlined} from '@ant-design/icons'
+import {LogoutOutlined } from '@ant-design/icons'
+
 
 const { Header } = Layout;
 
 const Profile = () => {
   const menu = (
     <Menu>
-      <Menu.Item key="1">Account</Menu.Item>
-      <Menu.Item key="2">Help</Menu.Item>
-      <Menu.Item key="3">Logout</Menu.Item>
+      <Menu.Item key="1"><UserOutlined/> Account</Menu.Item>
+      <Menu.Item key="2"><QuestionCircleOutlined /> Help</Menu.Item>
+      <Menu.Item key="3"><LogoutOutlined /> Logout</Menu.Item>
     </Menu>
   );
 

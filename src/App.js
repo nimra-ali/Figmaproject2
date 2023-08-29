@@ -7,6 +7,7 @@ import Forgetpswd from './Component/LoginForm/Forgetpasrd';
 import Verificaton from './Component/SignupPage/Verification';
 import Slides from './Component/LandingPages/Slides';
 import Profile from './Component/Profilepage/Profile';
+import Question from './Component/SignupPage/Question';
 // import Profile from './Component/Profilepage/Profile';
 
 
@@ -30,7 +31,7 @@ function App() {
       <Route path='/Signup' Component={Signup} exact/>
       <Route path='/Loginform' Component={Loginform}/>
       <Route path='/Verification' Component={Verificaton} exact/>
-    
+      <Route path='/Question' Component={Question} exact/>
      </Routes>
     
       </div>

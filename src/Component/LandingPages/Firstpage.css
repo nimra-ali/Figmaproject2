@@ -20,26 +20,29 @@
     align-items: center;
 }
 .dot{
-    width: 180px;
+    width: 100px;
     height: 400px;
     margin-bottom: 8%;
     /* border: 2px solid red; */
     /* background-image: url('../../Assest/dot.png'); */
 }
 .dots{
-    width: 180px;
+    width: 220px;
+
     height: 400px;
 }
 .takeMeal{
     width: 500px;
     height: 477px;
+    margin-left: 90px;
     margin-bottom: 10%
 }
 .mealText{
     color: #192E46;
 text-shadow: 0px 10px 23px rgba(0, 0, 0, 0.15);
-font-family: Poppins;
+/* font-family: Poppins; */
 margin-top: 26px;
+margin-left: 50px;
 font-size: 54px;
 font-style: normal;
 font-weight: 900;
@@ -49,26 +52,29 @@ padding-bottom: 30px;
 }
 .mealText span{
     color: #192E46;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 54px;
 font-style: normal;
+/* margin-left: 20px; */
+
 font-weight: 800;
 line-height: 78px;
 text-decoration-line: underline;
 }
 .mealPara{
     color: #4C6889;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 24px;
 font-style: normal;
 font-weight: 400;
+margin-left: 50px;
 line-height: 29px;
 text-align: start;
 padding-bottom: 50px;
 }
 .mealPara span{
     color: #F37357;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 24px;
 font-style: normal;
 font-weight: 600;
@@ -86,6 +92,7 @@ cursor: pointer;
     margin-left: 0px;
     /* margin-left: 10px; */
      width: 210px;
+     margin-left: 50px;
  height: 62px;
  flex-shrink: 0;
  border-radius: 4px;
@@ -93,6 +100,7 @@ cursor: pointer;
  color: white;
  border: none;
 }
+
  .more{
     width: 210px;
  height: 62px;
@@ -101,7 +109,7 @@ cursor: pointer;
     background-color: white;
     color: #192E46;
 text-align: center;
-font-family: Poppins;
+/* font-family: Poppins; */
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -122,10 +130,14 @@ margin-left: 30px;
 .pinkDots{
     width: 30px;
     height: 200px;
+    margin-left: -13%;
     /* border: 2px solid #4C6889; */
 }
 .homepage{
-    width: 90%;
+    width: 99%;
+    /* height: 90%; */
+    /* margin-left: 7%; */
+    margin-top: -11%;
     /* height: 880%; */
 }
 
@@ -155,39 +167,50 @@ margin-left: 30px;
     }
 
     .mealText {
-        font-size: 40px; 
-        line-height: 50px; 
-        text-align: center;
+        font-size: 30px; 
+        line-height: 50px;  
+        margin-left: -21%;
+        font-weight: 900; 
+        /* text-align: center; */
     }
 
     .mealText span {
-        font-size: 45px; 
+        margin-left: 1%; 
+
+        font-size: 30px; 
         line-height: 55px; 
     }
 
     .mealPara {
         font-size: 20px; 
         line-height: 25px; 
+        margin-left: -32%;
+/* font-weight: 600; */
         text-align: center;
     }
 
     .mealPara span {
         font-size: 22px; 
+        margin-left: -17px;
         line-height: 27px;
     }
     .pinkDots{
-        margin-bottom: 30%;
+        display: none;
+        /* margin-bottom: 30%; */
+        /* margin-left: -16%; */
     }
 
     .button {
         flex-direction: column; 
         align-items: flex-start; 
         justify-content: flex-start;
+    margin-left: -36%;
     }
 
     .started,
     .more {
         width: 100%; 
+        /* margin-right: 20px; */
         margin: 10px 0; 
     }
     .overView{
@@ -197,14 +220,11 @@ margin-left: 30px;
     justify-content: space-between;
     /* margin-bottom: 30% */
     }
-    .pink{
-        width: 20px;
-        height: 200px;
-           }
+   
 
            .homepage{
-            margin-top: -15%;
-            width: 350px;
-            height: 500px;
+            margin-top: -16%;
+            width: 426px;
+            /* height: 650px; */
            }
 }

@@ -18,10 +18,10 @@ const GetStart = () => {
                             <img className='dots' src={require('../Images/Group 211.png')} />
                         </div>
                         <div className='takeMeal'>
-                            <p className='mealText'>Take your meal  <br/>prep company
+                            <p className='mealText'>Take your meal  prep company
                              to the <span>next level</span></p>
                             <p className='mealPara'><span>cottage</span>
-                                will help you reach more customers and simplify managing your site, your menus, and your orders, letting you focus on delivering great food.</p>
+                                 will help you reach more customers and simplify managing your site, your menus, and your orders, letting you focus on delivering great food.</p>
                             <div className='button'>
                                 <button className='started'>GET STARTED</button>
                                 <button className='more'>LEARN MORE</button>

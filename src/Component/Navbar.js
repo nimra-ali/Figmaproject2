@@ -15,7 +15,7 @@ const Navbar = () => {
                     <img className='cottage' src={require('./Images/LOGO (1).png')} alt='cottage' />
             </div>
             <div>
-                    <button className='nav-btn' onClick={handleForm}>SIGN IN</button>
+                    <button className='nav-btn' onClick={handleForm}>SIGN UP</button>
             </div>
             </div>
         </div>

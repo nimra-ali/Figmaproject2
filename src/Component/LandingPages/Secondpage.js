@@ -10,11 +10,11 @@ const Secondpage = () => {
                         {/* <img src={require('../../Assest/menu.png')}/> */}
                     </div>
                     <div className='menutext'>
-                        <h1 className='menuHead'>Offer your menu the way you want</h1>
-                        <p  className='menuPara'>Use <span>Cottage</span> to set up a menu and decide which items are available on which days. Create different locations for your meal prep company to manage them separately. Offer your customers discount codes with a few clicks.</p>
+                        <h4 className='menuHead3'>Offer your menu the way you want</h4>
+                        <p  className='menuParRa'>Use <span>Cottage</span> to set up a menu and decide which items are available on which days. Create different locations for your meal prep company to manage them separately. Offer your customers discount codes with a few clicks.</p>
                     </div>
-                    <div className='dott'>
-                        <img className='dott' src={require('../Images/Group 211.png')}/>
+                    <div className='dot'>
+                        <img className='dott2' src={require('../Images/Group 211.png')}/>
                     </div>
                     <div className='pinkdot'>
                         <img src={require('../Images/radio-right2.png')}/>
@@ -24,5 +24,4 @@ const Secondpage = () => {
         </div>
     )
 }
-
-export default Secondpage
+export default Secondpage;
