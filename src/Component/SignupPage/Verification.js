@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
 import './Verification.css'
 import logo from '../Images/LOGO (2).png'
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 
 function Verification() {
-const Navigate = useNavigate()
+// const Navigate = useNavigate()
 const [instruction,setinstruction]= useState('')
 
     const send=(e)=>{
@@ -15,9 +15,7 @@ const [instruction,setinstruction]= useState('')
     const handlecross=()=>{
          setinstruction(false)
     }
-    const handleQuetion = () => {
-        Navigate('/Question');
-    }
+   
     return (
         <div className='forgetpswd'> 
         <div className='forget'>
@@ -45,7 +43,7 @@ Enter the code below to confirm your email address.
     </div>
     {/* <p>{instruction}</p> */}
 
-    <h5 onClick={handleQuetion} className='verifyh5'>Question? <span>We are here to help</span></h5>
+    <h5 className='verifyh5'>Question? <span>We are here to help</span></h5>
     </div>
 
         </div>

@@ -1,13 +1,18 @@
 import { useNavigate } from 'react-router-dom';
 import './Loginform.css'
 import { useState } from 'react';
-// import Profilepage from '../Profilepage'
+import {  Input } from 'antd';
+
+import { EyeOutlined, EyeInvisibleOutlined } from '@ant-design/icons'
+
 
 const Loginform = () => {
 const navigate = useNavigate()
    
     const [password, setPassword] = useState('');
     const [email, setEmail] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
+
 
 
     const handleSubmit = (e) => {
@@ -21,8 +26,10 @@ const navigate = useNavigate()
     }
     const handleSignUp=()=>{
         navigate('/Signup')
-
-    }
+       }
+       const togglePasswordVisibility = () => {
+        setShowPassword(!showPassword);
+    };
 
     return (
         <div>
@@ -47,13 +54,27 @@ const navigate = useNavigate()
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
-                                    <input
+                                                                        <div className="conFirm">
+                                        <Input.Password
+                                            className='password'
+                                            placeholder="Password"
+                                            value={password}
+                                            onChange={(e) => setPassword(e.target.value)}
+                                            iconRender={visible => (
+                                                <span onClick={togglePasswordVisibility}>
+                                                    {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                                                </span>
+                                            )}
+                                        />
+                                    </div>
+                                    
+                                    {/* <input
                                     className='passwordd'
                                         type="password"
                                         placeholder="Password"
                                         value={password}
                                         onChange={(e) => setPassword(e.target.value)}
-                                    />
+                                    /> */}
                                     <button className='sign-button' type="submit"  onClick={()=>{navigate('/Profilepage')}}>Sign In Now</button>
                                 </form>
                                 <p className='forget' onClick={forgetpswrd}>Forget Password?</p>

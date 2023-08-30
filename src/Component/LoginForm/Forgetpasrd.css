@@ -129,6 +129,10 @@ letter-spacing: 0.01em;
         margin:-6px 22px;
 
     }
+.forgetlogo{
+    margin-top: -10%;
+}
+
     .forgetlist{
         margin:30px;
         cursor: pointer;

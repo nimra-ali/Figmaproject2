@@ -16,9 +16,9 @@ const Secondpage = () => {
                     <div className='dot'>
                         <img className='dott2' src={require('../Images/Group 211.png')}/>
                     </div>
-                    <div className='pinkdot'>
+                    {/* <div className='pinkdot'>
                         <img src={require('../Images/radio-right2.png')}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

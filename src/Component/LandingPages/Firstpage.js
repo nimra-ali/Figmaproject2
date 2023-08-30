@@ -31,9 +31,9 @@ const GetStart = () => {
                         <div className='overView'>
                             
                                         <img className='homepage' src={require('../Images/homepage_1.png')}/>
-                                        <div className='pinkDots'>
+                                        {/* <div className='pinkDots'>
                                     <img className='pink' src={require('../Images/radio-right1.png')}/>
-                                </div>
+                                </div> */}
                                 </div>
                               
                             </div>

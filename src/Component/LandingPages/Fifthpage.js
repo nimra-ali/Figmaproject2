@@ -19,9 +19,9 @@ const Fifthpage =()=>{
                     <div className='orderImg'>
                         {/* <img src={require('../../Assest/menu.png')}/> */}
                     </div>
-                    <div className='pinkdot'>
+                    {/* <div className='pinkdot'>
                         <img src={require('../Images/radio-right (4).png')}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

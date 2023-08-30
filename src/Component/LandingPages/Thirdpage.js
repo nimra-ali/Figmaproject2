@@ -18,9 +18,9 @@ const Thirdpage =()=>{
                     <div className='menuPlanImg'>
                         {/* <img src={require('../../Assest/menu.png')}/> */}
                     </div>
-                    <div className='pinkdot'>
+                    {/* <div className='pinkdot'>
                         <img src={require('../Images/radio-right.png')}/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 
