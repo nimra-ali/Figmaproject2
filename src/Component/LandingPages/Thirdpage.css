@@ -21,10 +21,10 @@ justify-content: space-between;
 height: 728px;
 flex-shrink: 0;
 /* border: 2px solid pink; */
-background: #F6F8FA;
+/* background: #F6F8FA; */
 background-image: url('../Images//homepage_3.png');
 background-size: cover;
-box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 0.05);
+/* box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 0.05); */
 }
 .menutext{
     width: 500px;
@@ -32,10 +32,10 @@ box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 
     /* border: 2px solid rgb(41, 148, 81); */
 }
 .dott4{
-    width: 220px;
-    margin-top: 62px;
+    width: 240px;
+    margin-top: -63px;
     height: 410px;
-    margin-left: -30%;
+    margin-left: -36%;
     /* margin-right: 60px; */
     /* border: 2px solid black; */
 }
@@ -48,7 +48,7 @@ box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 
     color: #192E46;
 /* font-family: Poppins; */
 font-size: 40px;
-margin-left: -22%;
+margin-left: -36%;
 
 /* font-style: normal; */
 font-weight: 800;
@@ -56,10 +56,10 @@ font-weight: 800;
 }
 .menuPara4{
     color: #4C6889;
-margin-left: -22%;
+margin-left: -36%;
 
 /* font-family: Poppins; */
-font-size: 16px;
+font-size: 17px;
 /* font-style: normal; */
 font-weight: 500;
 /* line-height: 29px;  */
@@ -97,23 +97,24 @@ line-height: 29px;
             display: none;
         }
         .menuPlanImg{
-            width: 100%;
-        height: 400px;
+            
+        width: 104%;
+        height: 445px;
         flex-shrink: 0;
-        margin-top: 20PX;
-        margin-left: -2%;
-        /* border: 2px solid pink; */
-        background: #F6F8FA;
-        background-image: url('../Images/homepage_3.png');
+        margin-top: -5px;
+        margin-left: -40px;
+      
+        background-image: url(../Images/homepage_3.png);
         background-size: cover;
-        box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 0.05);
-        }
+      
+    }    
+    
         .menutext{
             margin-top: 20px;
             width: 100%;
             height: auto;
             /* border: 2px solid rgb(41, 148, 81); */
-        }
+          }
         .pinkdot{
            display: none;
         }
@@ -121,19 +122,23 @@ line-height: 29px;
             color: #192E46;
         /* font-family: Poppins; */
         font-size: 45px;
-        text-align: center;
-        font-style: normal;
+        margin-left: 5%;
+        margin-top: 13%;
+        /* text-align: center; */
+        /* font-style: normal; */
         font-weight: 800;
-        line-height: 58px; 
+        /* line-height: 58px;  */
         }
-        .menuPara4x{
+        .menuPara4{
             color: #4C6889;
         /* font-family: Poppins; */
-        font-size: 20px;
-        font-style: normal;
+        font-size: 17px;
+        margin-left: -1%;
+
+        /* font-style: normal; */
         text-align: center;
-        font-weight: 400;
-        line-height: 29px; 
+        font-weight: 500;
+        /* line-height: 29px;  */
         margin-top: 30px;
         }
 }

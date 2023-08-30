@@ -10,7 +10,7 @@ const Fourthpage =()=>{
                         {/* <img src={require('../../Assest/menu.png')}/> */}
                     </div>
                     <div className='menutext'>
-                        <h1 className='menuHead5'>Schedule your menu items</h1>
+                        <h1 className='menuHead5'>Schedule your menu <span className='schdule-span'>items</span></h1>
                         <p  className='menuPara5'>Use <span>Cottage</span> whether you're an occasional meal prep company or a multi-location enterprise, you can use schedules to make menu items only available on certain days. Also use schedules to set a deadline for ordering.</p>
                     </div>
                     <div className='dott'>
