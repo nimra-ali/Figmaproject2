@@ -14,6 +14,8 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
     const [confirmPasswordVisible, setConfirmPasswordVisible] = useState(false);
+    const [passwordError, setPasswordError] = useState('');
+    const [confirmPasswordError, setConfirmPasswordError] = useState('');
 
     const showModal = () => {
         setIsModalOpen(true);
@@ -40,8 +42,25 @@ const SignUp = () => {
     };
     const toggleConfirmPasswordVisibility = () => {
         setConfirmPasswordVisible(!confirmPasswordVisible);
-      };
-
+    };
+    const validatePassword = (value) => {
+        if (value.length > 0 && value.length < 6) {
+            setPasswordError('Password must be at least 6 characters.');
+        } else if (value.length >= 6 && (!/[A-Z]/.test(value) || !/[a-z]/.test(value) || !/[0-9]/.test(value))) {
+            setPasswordError('Password must include an uppercase letter, lowercase letter, and a number.');
+        } else {
+            setPasswordError(''); // Clear the error message when the password meets the criteria
+        }
+    }
+    const validateConfirmPassword = (value) => {
+        if (value.length > 0 && value.length < 6) {
+            setConfirmPasswordError('Password must be at least 6 characters.');
+        } else if (value.length >= 6 && (!/[A-Z]/.test(value) || !/[a-z]/.test(value) || !/[0-9]/.test(value))) {
+            setConfirmPasswordError('Password must include an uppercase letter, lowercase letter, and a number.');
+        } else {
+            setConfirmPasswordError(''); // Clear the error message when the password meets the criteria
+        }
+    }
     return (
         <div>
             <div className='signUpContent'>
@@ -85,30 +104,40 @@ const SignUp = () => {
                                             className='password'
                                             placeholder="Password"
                                             value={password}
-                                            onChange={(e) => setPassword(e.target.value)}
+                                            onChange={(e) => {
+                                                setPassword(e.target.value)
+                                                validatePassword(e.target.value);
+                                            }}
                                             iconRender={visible => (
                                                 <span onClick={togglePasswordVisibility}>
                                                     {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
                                                 </span>
                                             )}
                                         />
+                                        {passwordError && <div className="error">{passwordError}</div>}
                                     </div>
                                     <div className="conFirm">
-        <Input.Password
-          className='password'
-          placeholder="Confirm Password"
-          value={confirmPassword}
-          onChange={(e) => setConfirmPassword(e.target.value)}
-          iconRender={visible => (
-            <span onClick={toggleConfirmPasswordVisibility}>
-              {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
-            </span>
-          )}
-        />
-      </div>
-            
+                                        <Input.Password
+                                            className='password'
+                                            placeholder="Confirm Password"
+                                            value={confirmPassword}
+                                            onChange={(e) => {
+                                                setConfirmPassword(e.target.value)
+                                                validateConfirmPassword(e.target.value);
+                                            }}
+                                            //   onChange={(e) => setConfirmPassword(e.target.value)}
+                                            iconRender={visible => (
+                                                <span onClick={toggleConfirmPasswordVisibility}>
+                                                    {visible ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                                                </span>
+                                            )}
+                                        />
+                                        {confirmPasswordError && <div className="error">{confirmPasswordError}</div>}
 
-                             
+                                    </div>
+
+
+
                                     <div className='S-BTN'>
                                         <button className='signbutton' type="submit" onClick={() => { Navigate('/Verification') }}>Sign Up Now</button>
                                     </div>
@@ -116,16 +145,16 @@ const SignUp = () => {
                                 <div className='MModal'>
                                     <p className='terms'>By continuing, I agree to Cottage’s <span onClick={showModal}>Terms & Conditions.</span></p>
                                 </div>
-                                <div className='connect'>
+                                {/* <div className='connect'>
                                     <p className='line'></p>
                                     <p>Or Connect With</p>
                                     <p className='line'></p>
-                                </div>
-                                <div className='fb-tweet'>
+                                </div> */}
+                                {/* <div className='fb-tweet'>
 
                                     <button className='facebook'>Facebook</button>
                                     <button className='twitter'>Twitter</button>
-                                </div>
+                                </div> */}
 
                             </div>
                         </div>
@@ -148,8 +177,3 @@ const SignUp = () => {
 }
 
 export default SignUp;
-
-
-
-
-// https://www.figma.com/file/rWO2Df3CL1AtcM6COGyXYC/Learn-React-with-10-Projects-(Copy)?type=design&node-id=0-1&mode=design&t=S0F8L6QXMWclPBWI-0
