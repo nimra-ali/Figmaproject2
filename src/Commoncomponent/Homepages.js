@@ -13,7 +13,7 @@ console.log(Commondata)
 return (
 
     <div>
-        <Navbar/>
+        <Navbar className='navb'/>
         <ReactFullpage 
         navigation={true}
         // scrollOverflow{false}

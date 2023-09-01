@@ -3,7 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import ReactFullpage from "@fullpage/react-fullpage";
 
-import Navbar from "../Navbar";
+// import Navbar from "../Navbar";
 import Homestyle from "./Homestyle";
 // ScrollHorizontally(); 
 class Signup extends React.Component {
@@ -16,7 +16,7 @@ class Signup extends React.Component {
   render() {
     return (
 <>
-<Navbar/>
+{/* <Navbar/> */}
      <ReactFullpage 
         navigation={true}
         // scrollOverflow{false}

@@ -1,12 +1,12 @@
 import React from 'react'
 import './Homepage.css'
-import Navbar from '../Component/Navbar';
+// import Navbar from '../Component/Navbar';
 const Homestyle = (props) => {
 const {image, tittle , description , dotimg} = props;
 console.log(image)
   return (
     <div className='background'>
-        <Navbar/>
+        {/* <Navbar/> */}
      <div className='mainn'>
                 <div className='mein'>
                     <div className='dotts'>
