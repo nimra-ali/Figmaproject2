@@ -3,9 +3,12 @@ const Commondata = [
         id: 1,
         tittle: "Take your meal prep company to the next level",
         description: "cottagewill help you reach more customers and simplify managing your site, your menus, and your orders letting you focus on delivering great food.",
-        dotimg: require('../Commoncomponent/ImageComp/dotimg.png'),
+        // dotimg: require('../Commoncomponent/ImageComp/dotimg.png'),
         image: require('../Commoncomponent/ImageComp/homepage_1.png'),
+        button: 'GET STARTED',
+        button2: 'LEARN MORE'
     },
+    
     {
         id: 2,
         tittle: "Offer your menu the way you want",
