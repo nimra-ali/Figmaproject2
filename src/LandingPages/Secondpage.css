@@ -1,0 +1,134 @@
+/* .mainn{
+    width: 100%;
+    
+    background-color: #F37357; 
+    background-image: url('../Images/bg-white\ \(2\).png'); 
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+width: 95%;
+height: 100vh;
+
+margin: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.menuImg{
+    width: 630px;
+height: 728px;
+
+margin-top: 6px;
+
+background-image: url('../Images//homepage_2.png');
+background-size: cover;
+}
+.menutext{
+    width: 500px;
+    height: 400px;
+}
+.dot{
+    
+
+    margin-right: 6%;
+}
+.dott2{
+    width: 210px;
+    height: 420px;
+    margin-right: 123px;
+ 
+}
+.pinkdot{
+    width: 30px;
+    
+}
+.menuHead3{
+color: #192E46;
+font-size: 45px;
+font-style: normal;
+font-weight: 800;
+margin-left: 10%;
+line-height: 58px; 
+}
+.menuParRa{
+    color: #4C6889;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px; 
+margin-left: 10%;
+margin-top: 50px;
+}
+.menuParRa span{
+    color: #FB775A;
+font-size: 19px;
+font-style: normal;
+font-weight: 500;
+line-height: 29px;
+}
+
+@media (max-width: 768px) {
+    .mainn{
+        
+        background-color: #F37357; 
+        background-image: url('../Images//bg-white\ \(2\).png'); 
+        background-size: cover;
+        background-position: center;
+    }
+    .menu{
+        width: 100%;
+        height: auto;
+       
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        }
+        .dott2{
+            display: none;
+        }
+        .menuImg{
+        width: 104%;
+        height: 445px;
+        flex-shrink: 0;
+        margin-top: -5px;
+        margin-left: -10px;
+       
+        background-image: url('../Images/homepage_2.png');
+        background-size: cover;
+        }
+        .menutext{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        }
+        .pinkdot{
+           display: none;
+        }
+        .menuHead3{
+            color: #192E46;
+      
+        font-size: 34px;
+        margin-left: 6%;
+        margin-top: 70px;
+        
+        font-weight: 900;
+      
+        }
+        .way{
+            margin-left: 45px;
+        }
+        .menuParRa{
+            color: #4C6889;
+       
+        font-size: 17px;
+        margin-left: -1%;
+
+        text-align: center;
+        font-weight: 600;
+    
+        margin-top: 30px;
+        }
+} */

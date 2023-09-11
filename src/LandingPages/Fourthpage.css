@@ -1,0 +1,134 @@
+/* .mainn{
+    width: 100%;
+   
+    background-color: #F37357; 
+    background-image: url('../Images/bg-white\ \(2\).png'); 
+    background-size: cover;
+    background-position: center;
+}
+.menu{
+width: 95%;
+height: 100vh;
+
+margin: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.menuItemImg{
+    width: 630px;
+height: 748px;
+margin-left: -2%;
+flex-shrink: 0;
+
+background-image: url('../Images/homepage_4.png');
+background-size: cover;
+
+}
+.menutext{
+    width: 500px;
+    height: 400px;
+  
+}
+.dott5{
+    width: 240px;
+    height: 430px;
+    margin-right: 20px;
+    margin-top: -27%;
+ 
+}
+.pinkdot{
+    width: 30px;
+    
+}
+.menuHead5{
+    color: #192E46;
+
+font-size: 48px;
+margin-left: 31px;
+
+font-weight: 800;
+
+}
+.menuPara5{
+    color: #4C6889;
+
+font-size: 17px;
+margin-left: 31px;
+
+font-style: normal;
+font-weight: 500;
+line-height: 29px; 
+margin-top: 50px;
+}
+.menuPara5 span{
+    color: #FB775A;
+
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+}
+
+@media (max-width: 768px) {
+    .mainn{
+       
+        background-color: #F37357; 
+        background-image: url('../Images/bg-white\ \(2\).png'); 
+        background-size: cover;
+        background-position: center;
+    }
+    .menu{
+        width: 100%;
+        height: auto;
+        
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap-reverse;
+        }
+        .dott{
+            display: none;
+        }
+        .menuItemImg{
+            width: 120%;
+        height: 400px;
+        margin-left: -9%;
+        flex-shrink: 0;
+      
+        background-image: url('../Images/homepage_4.png');
+        background-size: cover;
+      
+        }
+        .menutext{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        border: 2px solid rgb(41, 148, 81);
+        }
+        .pinkdot{
+           display: none;
+        }
+        .menuHead5{
+        color: #192E46;
+        font-size: 35px;
+        margin-left: 5%;
+        margin-top: 60px;
+        font-weight: 800;
+       }
+       .schdule-span{
+       margin-left: 33%;
+       }
+        .menuPara5{
+            color: #4C6889;
+      
+        font-size: 20px;
+        font-style: normal;
+        margin-left: -2%;
+        text-align: center;
+        font-weight: 400;
+        line-height: 29px; 
+        margin-top: 30px;
+        }
+} */

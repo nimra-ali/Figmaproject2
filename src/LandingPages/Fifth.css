@@ -1,0 +1,167 @@
+/* .mainn{
+    width: 100%;
+    
+    background-color: #F37357; 
+    background-image: url('../Images/bg-white.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.menuPlan{
+width: 95%;
+height: 100vh;
+
+margin: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.orderImg{
+    width: 630px;
+height: 728px;
+flex-shrink: 0;
+
+/* background: #F6F8FA; */
+/* background-image: url('../Images/homepage_5.png'); */
+/* background-size: cover; */
+/* box-shadow: 0px 27.65410614013672px 157.12559509277344px 0px rgba(76, 104, 137, 0.05); */
+/* } */
+/* .menutext{
+    width: 500px;
+    height: 400px;
+  
+}
+.dott6{
+    width: 230px;
+    height: 420px;
+    margin-left: -24%;
+    margin-top: -40%;
+  
+}
+.pinkdot{
+    width: 30px;
+    
+}
+.menuHead6{
+    color: #192E46;
+margin-left: -10%;
+font-size: 34px;
+font-weight: 800;
+
+
+
+}
+.menuPara{
+    color: #4C6889; */
+/* font-family: Poppins; */
+/* font-size: 21px; */
+/* margin-left: -10%; */
+
+/* font-style: normal; */
+/* font-weight: 500; */
+/* line-height: 29px;  */
+/* margin-top: 50px; */
+/* } */
+/* .menuPara span{ */
+    /* color: #FB775A; */
+/* font-family: Poppins; */
+/* font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+}
+.payment{
+    margin-top: 20%;
+    color: #4C6889;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px;
+}
+.payment span{
+    color: #008CDD;
+
+font-size: 18px;
+font-style: normal;
+font-weight: 800;
+line-height: 26px;
+}
+
+@media (max-width: 768px) {
+    .mainn{
+        
+        background-color: #F37357; 
+        background-image: url('../Images/bg-white.png'); 
+        background-size: cover;
+        background-position: center;
+    }
+    .menuPlan{
+        width: 100%;
+        height: auto;
+    
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+        .dott{
+            display: none;
+        }
+        .orderImg{
+            width: 116%;
+        height: 400px;
+      
+        flex-shrink: 0;
+        margin-top: 4%;
+       margin-left: -8%;
+    
+        background-image: url('../Images/homepage_5.png');
+        background-size: cover;
+      
+        }
+        .menutext{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+        
+        }
+        .pinkdot{
+           display: none;
+        }
+        .menuHead6{
+            color: #192E46; */
+/*     
+        font-size: 35px;
+        text-align: center;
+       
+        font-weight: 800;
+        margin-top: 15%;
+        margin-left: 8px;
+       
+        }
+        .menuPara{
+            color: #4C6889;
+    
+        font-size: 19px;
+        margin-left: -2px;
+ 
+        text-align: center;
+        font-weight: 400;
+   
+        margin-top: 30px;
+        }
+        .payment span{
+            font-size: 24px;
+        }
+        .payment{
+            margin-top: 10%;
+            color: #4C6889;
+        
+        font-size: 27px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        }
+}  */

@@ -1,0 +1,134 @@
+/* .mainn{
+    width: 100%;
+
+    background-color: #F37357; 
+    background-image: url('../Images/bg-white.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.menuPlan{
+width: 95%;
+height: 100vh;
+
+margin: 50px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.menuPlanImg{
+
+    width: 760px;
+height: 728px;
+flex-shrink: 0;
+
+background-image: url('../Images//homepage_3.png');
+background-size: cover;
+}
+.menutext{
+    width: 500px;
+    height: 400px;
+}
+.dott4{
+    width: 240px;
+    margin-top: -63px;
+    height: 410px;
+    margin-left: -36%;
+ 
+}
+.pinkdot{
+    width: 30px;
+    margin-left: 2%;
+    
+}
+.menuHead4{
+    color: #192E46;
+
+font-size: 40px;
+margin-left: -36%;
+
+
+font-weight: 800;
+
+}
+.menuPara4{
+    color: #4C6889;
+margin-left: -36%;
+
+font-size: 17px;
+
+font-weight: 500;
+
+margin-top: 50px;
+}
+.menuPara4 span{
+    color: #FB775A;
+
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 29px;
+}
+
+@media (max-width: 768px) {
+    .mainn{
+      
+        background-color: #F37357; 
+        background-image: url('../Images/bg-white.png'); 
+        background-size: cover;
+        background-position: center;
+    }
+    .menuPlan{
+        width: 100%;
+        height: auto;
+     
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+        .dott4{
+            display: none;
+        }
+        .menuPlanImg{
+            
+        width: 104%;
+        height: 445px;
+        flex-shrink: 0;
+        margin-top: -5px;
+        margin-left: -40px;
+      
+        background-image: url(../Images/homepage_3.png);
+        background-size: cover;
+      
+    }    
+    
+        .menutext{
+            margin-top: 20px;
+            width: 100%;
+            height: auto;
+          }
+        .pinkdot{
+           display: none;
+        }
+        .menuHead4{
+            color: #192E46;
+        font-size: 45px;
+        margin-left: 5%;
+        margin-top: 13%;
+       
+        font-weight: 800;
+    
+        }
+        .menuPara4{
+            color: #4C6889;
+        
+        font-size: 17px;
+        margin-left: -1%;
+
+        text-align: center;
+        font-weight: 500;
+    
+        margin-top: 30px;
+        }
+} */

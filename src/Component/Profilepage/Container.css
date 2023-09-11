@@ -6,7 +6,7 @@
 
     margin-left: 120px;
 
-    /* border: 1px solid black; */
+
 }
 
 .main-card {
@@ -21,10 +21,10 @@
     position: relative;
     width: 80px;
     height: 80px;
-    /* z-index: /1; */
+ 
     margin-left: 42%;
     margin-top: 20px;
-    /* background-repeat: no-repeat;q */
+
     border-radius: 60px;
     margin-bottom: 30px;
     background-image: url('../Images/man.png');
@@ -62,14 +62,14 @@
     left:35%;
     color: white;
     font-size: 25px;
-    /* z-index: 1; */
+   
 }   
 .pen {
     margin-left: 95%;
 }
 
 .men {
-    /* width: 50px; */
+   
     margin-top: 10px;
    
     border-radius: 80px;
@@ -161,7 +161,7 @@
     height: 470px;
     display: flex;
     justify-content: space-around;
-    /* border: 1px solid black; */
+   
     margin-top: 9%;
     margin-left: -37.74%;
 }
@@ -222,7 +222,7 @@
 
 .for-flex2 {
     display: flex;
-    /* justify-content: space-evenly; */
+  
 }
 
 .namedom ,.namedomm{
@@ -279,14 +279,13 @@
 }
 .btnpluss{
     width: 40%;
-    /* display: flex; */
-    /* margin-top: 25%; */
+
     margin-right: 9%;
      height: 44px;
 }
 .skipbtn{
     width: 120%;
-    /* margin-top: 1%; */
+
     margin-right: 1%;
       height: 44px;
 }
@@ -311,7 +310,7 @@ height: 60vh;
     font-family: Poppins;
  background-color: transparent;
     margin-top: 3%;
-/* width: 210px; */
+
     font-size: 27px;
     font-weight: 600;
     line-height: 45px;
@@ -333,11 +332,11 @@ height: 60vh;
     justify-content: center;
   }
   .custom-modal-title {
-    /* font-family: Poppins; */
+
     font-size: 30px;
     font-weight: 700;
     line-height: 38px;
-    /* margin-top: -50%; */
+    
     letter-spacing: -0.02em;
     text-align: center;
 
@@ -367,7 +366,7 @@ margin: -2px;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../Images/man.png');
-  /* z-index: 1;   */
+
 }
 
 .editprofiledp::before {
@@ -412,7 +411,7 @@ justify-content: space-evenly;
     justify-content: space-evenly;
   }
   .editprofileinput1 label{
-    /* font-family: Poppins; */
+
 font-size: 12px;
 margin-left: 3px;
 font-weight: 600;
@@ -431,8 +430,7 @@ height: auto;
 margin-top: -55px;  
 }
   .instructionptag p{
-    /* width: 400px; */
-    /* height: 70px; */
+    
     color: #FB775A;
     background-color: #FFE2E2;
     margin: 30px;
@@ -442,10 +440,8 @@ margin-top: -55px;
     font-weight: 400;
     padding: 5px;
     line-height: 25px;
-    /* letter-spacing: 0.0em; */
     text-align: left;
-    
-    /* text-align: left; */
+ 
     border-radius: 5px;
   }
   .editprofilenae{
@@ -502,14 +498,9 @@ letter-spacing: 0.01em;
     display: flex;
     margin-top: 10px;
 }
-/* .icon-men{
-    margin-top: 13px;
-    width: 77px;
-    border-radius: 45px;
-    
-} */
+
 .grey{
-    /* margin-top: -19%; */
+   
     color: #192E46;
 }
 
@@ -574,7 +565,7 @@ margin-left: 40px;
     margin-top: -105;
 }
 .container-box{
-    /* border: 1px solid black; */
+    
     margin-left: 222%;
     width: 350px;
     height: 298px;
@@ -591,9 +582,7 @@ margin-top: -75px;
     height: 530px;
 }
 
-/* .namedom4{
-    margin-top: -28%;
-} */
+
 .crust-pizza{
     font-size: 26px;
 }
@@ -682,7 +671,7 @@ margin-left: -67%;
     margin-top: -27%;
 }
 .ant-modal .ant-modal-content{
-    /* height: 190px; */
+ 
     margin-top: 40px;
 }
 .editprofileinput1 {
@@ -704,7 +693,7 @@ justify-content: space-evenly;
 
   }
   .editprofileinput1 label{
-    /* font-family: Poppins; */
+ 
 font-size: 12px;
 margin-top: -10px;
 font-weight: 600;

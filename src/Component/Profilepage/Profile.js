@@ -29,7 +29,7 @@ const Profile = () => {
     <div className='next'><p className='s'>Sign in</p>
    <Dropdown overlay={menu} trigger={['click']} >
         <a className="ant-dropdown-link icon" onClick={e => e.preventDefault()}>
-          {/* Your profile icon, for example */}
+        
           <img src={logo6} alt='profile' className='profile'/>
           <div className='drop2'>
           <DownOutlined className='drop'/>

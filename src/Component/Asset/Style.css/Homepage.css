@@ -1,0 +1,168 @@
+.background {
+    overflow: hidden;
+    background-color: #F37357;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../Image/bg-white.png');
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-btn {
+    margin-left: -20%;
+}
+.mein {
+    width: 100%;
+
+    background-image: url('../Image/bg-white.png');
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuItemImg {
+    width: 600px;
+    height: 600px;
+    margin-top: 2%;
+}
+
+.g {
+    width: 650px;
+    height: 600px;
+    flex-shrink: 0;
+
+
+
+    background-size: cover;
+}
+
+.texts {
+    width: 400px;
+    height: 400px;
+
+}
+
+.buttonstyle {
+    width: 80px;
+}
+
+.dotts {
+    width: 280px;
+    height: 480px;
+
+    background-image: url(../Image/dotimg.png);
+
+}
+
+.section:nth-child(even) .mein {
+    flex-direction: row-reverse;
+}
+
+.h2 {
+    color: #192E46;
+    font-size: 35px;
+
+
+    font-weight: 1000;
+    line-height: 50px;
+}
+
+.menuPara {
+    color: #4C6889;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 50px;
+}
+
+.menuPara span {
+    color: #FB775A;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+}
+
+.btn-comp {
+    margin-top: -63%;
+    margin-left: -14%;
+}
+
+
+
+@media (max-width: 768px) {
+    .mainn {
+
+        background-size: cover;
+        background-position: center;
+    }
+
+    .mein {
+        width: 100%;
+        height: auto;
+        margin: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .dotts {
+        display: none;
+    }
+
+    .menuItemImg {
+        width: 100%;
+        height: 400px;
+        margin-top: 20PX;
+
+        background-size: cover;
+    }
+
+    .menutext {
+        margin-top: 50px;
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .pinkdot {
+        display: none;
+    }
+
+    .h1 {
+        color: #192E46;
+        font-size: 36px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px;
+        margin-top: 122px;
+    }
+
+    .menuPara {
+        color: #4C6889;
+        font-size: 17px;
+        font-style: normal;
+        text-align: center;
+        font-weight: 400;
+        line-height: 20px;
+        margin-top: 44px;
+    }
+
+    .nav-btn {
+        margin-right: 20%;
+    }
+
+    .btn-comp {
+        margin-left: 9%;
+    }
+
+    .buttonstyle {
+        margin-left: 4%;
+
+    }
+}
