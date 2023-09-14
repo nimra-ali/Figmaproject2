@@ -1,0 +1,186 @@
+$primary-color: #F37357;
+$secondary-color: #FB775A;
+$text-color: #192E46;
+$gray-color: #959DAD;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow {
+  box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.09);
+}
+
+@mixin button-styles {
+  width: 223px;
+  height: 50px;
+  color: $text-color;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.signUpContentt {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  background-color: $primary-color;
+  background-image: url('../Image/bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.error {
+  color: $gray-color;
+  font-weight: 600;
+  margin-top: 6px;
+  text-align: center;
+}
+
+.signUpFormm {
+  @include center;
+  flex-direction: column;
+}
+
+.form-Div {
+  @include center;
+  width: 500px;
+  height: 447px;
+  margin-top: 13px;
+  background: #fff;
+  @include box-shadow;
+}
+
+.formm {
+  width: 440px;
+  height: 364px;
+  border: 1px solid #D4D7DD;
+  @include box-shadow;
+}
+
+.signInn {
+  @include button-styles;
+}
+
+.SIGNUP {
+  margin-top: -8.33%;
+  cursor: pointer;
+}
+
+.signUpss {
+  @include button-styles;
+  color: $gray-color;
+  border: 1px solid #D4D7DD;
+  background: #FAFAFA;
+  margin-left: 49.50%;
+  margin-top: -50%;
+}
+
+.EMAIL {
+  width: 367px;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-left: 10px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid $secondary-color;
+  background: #FFF;
+  font-size: 14px;
+}
+
+.signLogoo {
+  width: 220px;
+  margin-top: 4%;
+}
+
+.PASSWORD {
+  width: 367px;
+  margin-top: 20px;
+  margin-left: 30px;
+  padding-left: 10px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #E0E4E9;
+  background: #FFF;
+  font-size: 14px;
+}
+
+.password-toggle-icon {
+  margin-left: -27px;
+  color: $gray-color;
+}
+
+.sign-button {
+  @include button-styles;
+  color: #fff;
+  width: 380px;
+  height: 38px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 15px;
+  margin-left: 30px;
+  background-color: $secondary-color;
+  border: none;
+}
+
+.forget {
+  color: $primary-color;
+margin-top: 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 54%;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-top: 3%;
+}
+
+@media (max-width: 768px) {
+  .form-Div {
+    width: 360px;
+    height: 650px;
+  }
+  .formm {
+    width: 330px;
+    height: 560px;
+  }
+  .signLogoo {
+    margin-top: 20px;
+  }
+  .signInn {
+    margin-left: -20px;
+  }
+  .signUpss {
+    width: 180px;
+    margin-left: 45%;
+    margin-top: -19%;
+  }
+  .SIGNUP {
+    margin-top: -11.5%;
+  }
+  .EMAIL {
+    width: 290px;
+    margin-left: 13px;
+    font-size: 20px;
+    margin-top: 60px;
+  }
+  .PASSWORD {
+    margin-top: 30px;
+    width: 290px;
+    margin-left: 13px;
+    font-size: 20px;
+  }
+  .sign-button {
+    margin-top: 30px;
+    width: 290px;
+    margin-left: 13px;
+    font-size: 20px;
+  }
+  .forget {
+    text-align: center;
+    margin-top: 20px;
+}}

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
-import '../Asset/Style.css/Navbar.css'
-import SignUp from '../Authentication/Signup';
+import '../Asset/Style.scss/Navbar.scss'
+
 
 const Navbar = () => {
     const navigate = useNavigate();

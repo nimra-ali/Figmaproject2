@@ -1,0 +1,142 @@
+$primary-color: #FB775A;
+$text-color: #192E46;
+$border-color: salmon;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin box-shadow {
+  box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.15);
+}
+
+@mixin button-styles {
+  width: 85%;
+  height: 46px;
+  background-color: $primary-color;
+  color: #fff;
+  margin: -5% 35px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.forgetpswd {
+  @include center;
+  background-color: $primary-color;
+  background-image: url('../Image/bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.forgetlogo {
+margin-left: -39%;
+}
+
+.forgetform {
+  margin-top: 13px;
+  width: 545px;
+  margin-left: -66%;
+  height: 510px;
+  background: #fff;
+  @include box-shadow;
+  border: 1px solid #f5dede;
+}
+
+.formforget {
+  margin: 35px;
+  border: 1px solid rgb(215, 210, 210);
+  height: 89%;
+
+  h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: $text-color;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+  }
+}
+
+.formforget input {
+  width: 71%;
+  height: 31px;
+  margin: 44px;
+  padding: 19px;
+  margin-top: 0%;
+  border-radius: 4px;
+  border: 1px solid $border-color;
+  margin-bottom: 25px;
+}
+
+.formforget p {
+  width: 400px;
+  color: $primary-color;
+  background-color: #FFE2E2;
+  margin: 35px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.01em;
+  border-radius: 5px;
+}
+
+.formforget button {
+  @include button-styles;
+}
+
+.forgetlist {
+  margin: 35px;
+  margin-top: 50px;
+  text-align: center;
+  color: $primary-color;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+
+  h3 {
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  .forgetform input {
+    margin: 22px;
+  }
+  .forgetform {
+    width: auto;
+    margin-left: -3%;
+  }
+  .forgetform button {
+    margin: -6px 22px;
+  }
+  .forgetlogo {
+    margin-top: -10%;
+  }
+  .forgetlist {
+    margin: 30px;
+    cursor: pointer;
+    margin-top: 58px;
+    text-align: center;
+    color: $primary-color;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+  }
+  .formforget {
+    margin: 20px;
+    p {
+      width: 83%;
+      margin-left: 25px;
+}}}

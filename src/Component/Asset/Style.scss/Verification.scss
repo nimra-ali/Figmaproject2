@@ -1,0 +1,67 @@
+$text-color: #192E46;
+$accent-color: #FB775A;
+$warning-bg: #FEAAAA;
+$warning-text: #FB5A5A;
+
+@mixin text-style {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+@mixin warning-style {
+  background-color: $warning-bg;
+  margin: 35px;
+  margin-top: 23px;
+  text-align: center;
+  font-weight: 650;
+  color: $warning-text;
+  width: 85%;
+  height: 34.5px;
+  padding: 5px;
+  text-align: left;
+}
+
+.list2 {
+  margin-top: 25px;
+  margin-bottom: 16px;
+  color: $text-color;
+
+  h4 {
+    color: $accent-color;
+  }
+}
+
+.ib {
+  margin-top: 5px;
+
+  input {
+    text-align: center;
+    color: #626972;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+  }
+}
+
+.part2 {
+  height: auto;
+
+  .verifyh5 {
+    margin-top: 45px;
+    margin-bottom: 15px;
+    @include text-style;
+
+    span {
+      color: $accent-color;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .text-danger {
+    @include warning-style;
+}}

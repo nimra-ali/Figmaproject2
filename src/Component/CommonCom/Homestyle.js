@@ -1,10 +1,10 @@
 import React from 'react'
-import '../Asset/Style.css/Homepage.css'
+import '../Asset/Style.scss/Homepage.scss'
 import Buttoncomp from './Buttoncomp';
 
 
 const Homestyle = (props) => {
-const {image, tittle , description , dotimg , button , button2} = props;
+const {image, tittle , description ,  button , button2} = props;
 console.log(image)
   return (
 
@@ -18,37 +18,39 @@ console.log(image)
                         <div className='buttonstyle'>
                          {button?(<Buttoncomp 
                             bgclr='white'
-                            width='170px'
-                            height='50px'
+                            width='190px'
+                            height='45px'
                             radius={'3px'}
                             textColor={'#192E46'}
                             border={'1px solid #192E46'}
                             textSize={'16px'}
-                            left={'237%'}
-                            top={'40%'}
+                            left={'299%'}
+                            top={'47%'}
+                            cursor={'pointer'}
                        
 
                          btnText={button2}/>):(null)}
                          <div className='btn-comp'>
                          {button2?(<Buttoncomp 
                              bgclr='#F37357'
-                             width='170px'
-                             height='50px'
+                             width='190px'
+                             height='45px'
                              radius={'3px'}
                              textColor={'white'}
                              border={'#F37357'}
                              textSize={'16px'}
+                          
+
                              btnText={button}/>):(null)}
                          </div>
                        </div>
                     </div>
                  
                     <div className='menuItemImg'>
-                    <img src={image} className='menuItemImg'/>
+                    <img src={image} className='menuItemImg' alt='menuu'/>
                        
                     </div>
                    </div>
 )
 }
-
 export default Homestyle;

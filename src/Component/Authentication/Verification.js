@@ -1,8 +1,8 @@
 import React from "react";
-import { Formik, Field, Form, ErrorMessage } from "formik";
+import { Formik, Field, Form} from "formik";
 import * as Yup from "yup";
 import logo from '../Images/LOGO (2).png';
-import '../Asset/Style.css/Verification.css'
+import '../Asset/Style.scss/Verification.scss'
 
 function Verification() {
 
@@ -21,7 +21,6 @@ function Verification() {
     console.log("Submitted values:", values);
 
   };
-
   return (
     <div className="forgetpswd">
       <div className="forget3">

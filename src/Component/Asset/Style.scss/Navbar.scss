@@ -1,0 +1,77 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+$primary-color: #F37357;
+$text-color: #192E46;
+$bg-color: #fff;
+
+.nav {
+  @include flex-center;
+  width: 100%;
+  z-index: 1;
+  background-color: $bg-color;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  padding: 12px;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+  @include border-radius(50%);
+  position: absolute;
+  z-index: 1;
+  height: 4px;
+  width: 4px;
+  border: 0;
+  background: $primary-color;
+  left: 99%;
+  margin: -2px 0 0 -2px;
+}
+
+.fp-warning, .fp-watermark {
+  display: none;
+}
+
+.cottage {
+  width: 70%;
+}
+
+.nav-btn {
+  width: 130px;
+  height: 40px;
+  @include border-radius(3px);
+  border: 1px solid $text-color;
+  background: $bg-color;
+  color: $text-color;
+  text-align: center;
+  font-family: Poppins;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 157.5%;
+  letter-spacing: 0.18px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    justify-content: space-between;
+  }
+
+  .cottage {
+    margin: 2px;
+    width: 60%;
+    margin-top: 1%;
+  }
+
+  .nav-btn {
+    font-size: 15px;
+    margin: 27px;
+    width: 100px;
+    height: 40px;
+}}

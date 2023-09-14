@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import Commondata from './Commondata';
 import Homestyle from './Homestyle';
 import ReactFullpage from "@fullpage/react-fullpage";
-
+import Lastpage from '../../LandingPages/Lastpage';
 
 
 import Navbar from "../CommonCom/Navbar";
+// import Lastpage from '../../LandingPages/Lastpage';
 
 
 function Homepages() {
@@ -43,7 +44,8 @@ function Homepages() {
                         </ReactFullpage.Wrapper>
                     )
                 }}
-            />
+                />
+                <Lastpage/>
         </div>
     )
 }

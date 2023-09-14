@@ -1,4 +1,4 @@
-const Buttoncomp =({bgclr,btnText, width,height,radius,border,textColor,textSize,left,top})=>{
+const Buttoncomp =({bgclr,btnText, width,height,radius,border,textColor,textSize,left,top,pointer})=>{
 
 return(
         <div>
@@ -12,6 +12,7 @@ return(
             color:textColor,
             fontSize:textSize,
             margintop:top,
+            cursor:pointer,
            }}>{btnText}</button>
         </div>
 )

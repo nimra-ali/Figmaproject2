@@ -1,15 +1,35 @@
 import React, { useState } from 'react';
-import { Formik, Field, ErrorMessage } from 'formik';
+import { Form , Formik, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import logo from '../Asset/Image/LOGO (1).png';
-import '../Asset/Style.css/Forgetpasrd.css';
+import '../Asset/Style.scss/Forgetpasrd.scss';
 import { useNavigate } from 'react-router-dom';
+import  auth  from './FirebaseConfig'
+import { sendPasswordResetEmail } from 'firebase/auth'; 
+import { message } from 'antd';
 
 const validationSchema = Yup.object().shape({
-  email: Yup.string().email('Invalid email address').required('Email is required'),
+  email: Yup.string()
+  // .email('Invalid email address')
+  .required('Email is required'),
 });
 
 function Forgetpswd() {
+
+  const handleSubmit = (values , {resetForm}) => {
+    sendPasswordResetEmail(auth , values.email)
+    .then((auth) => {
+      message.success(
+        "password reset email sent successfully . please check your email"
+      );
+navigate('/Loginform')
+    })
+    .catch((err) => {
+      message.error(`password reset failed. Error code: ${err.code}`)
+    });
+    resetForm();
+  }
+
   const navigate = useNavigate();
 
   const signin = () => {
@@ -37,26 +57,31 @@ function Forgetpswd() {
             <Formik
               initialValues={{ email: '' }}
               validationSchema={validationSchema}
-              onSubmit={(values, { setSubmitting }) => {
-                setinstruction("If your email address is exists in our database, you will receive a password recovery link at your email address in a few minutes");
-                setSubmitting(false);
-              }}
+              onSubmit={handleSubmit}
+              //   setinstruction("If your email address is exists in our database, you will receive a password recovery link at your email address in a few minutes");
+              //   setSubmitting(false);
+              // }}
             >
-              {({ handleSubmit, isSubmitting }) => (
-                <form onSubmit={handleSubmit}>
+              {({ errors , touched}) => (
+                <Form>
                   <Field type='text' name='email' placeholder='Email Address' />
                   <ErrorMessage name='email' component='div' className='error' />
-                  {instruction ? (
+                  <div className='space'>
+                  <button type='submit'>Reset</button>
+                  </div>
+                 
+                </Form>
+              )}
+            </Formik>
+            {instruction ? (
                     <div>
                       <button onClick={handlecross}>Cancel</button>
                       <p>{instruction}</p>
                     </div>
                   ) : (
-                    <button type='submit' disabled={isSubmitting}>Send Instruction</button>
+                    
+                    <button onClick={send}>Send Instruction</button>
                   )}
-                </form>
-              )}
-            </Formik>
             <div className='forgetlist'>
               <h3 onClick={signin}>Sign In</h3>
               <h3 onClick={signup}>Create Account</h3>

@@ -1,4 +1,4 @@
-import '../Asset/Style.css/Signup.css';
+import '../Asset/Style.scss/Signup.scss';
 import React , {useState} from 'react';
 import {Modal as AntModal, Input } from 'antd';
 import { useNavigate } from 'react-router-dom';
@@ -10,6 +10,7 @@ import  auth  from './FirebaseConfig';
 const SignUp = () => {
 const Navigate = useNavigate();
 const [isModalOpen, setIsModalOpen] = useState(false);
+const [error, setError] = useState(null);
 
 const validationSchema = Yup.object().shape({
     firstName: Yup.string().required('First Name is required'),
@@ -49,7 +50,7 @@ const validationSchema = Yup.object().shape({
       
         Navigate('/Verification');
       } catch (error) {
-        console.error('Error creating user:', error.message);
+        setError('Error creating user:', error.message);
   
       }
     },
@@ -90,27 +91,31 @@ const validationSchema = Yup.object().shape({
               <div className='feild'>
                 <form className='form2' onSubmit={formik.handleSubmit}>
                     <div className='flx-box'>
-                        <div className='label1'>
+                        {/* <div className='label1'>
                     <label >FirstName</label>
-                    </div>
+                    </div> */}
+                    <div>
                   <input
                     className='name'
                     type='text'
                     name='firstName'
+                    placeholder='First Name'
                     value={formik.values.firstName}
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
-                  />
-                  {formik.touched.firstName && formik.errors.firstName && (
-                    <div className='error'>{formik.errors.firstName}</div>
-                  )}
-                  <div className='label2'>
-                    <label >LastName</label>
+                    />
+                    {formik.touched.firstName && formik.errors.firstName && (
+                      <div className='error'>{formik.errors.firstName}</div>
+                    )}
                     </div>
+                    <div>
+                  {/* <div className='label2'>
+                    <label className='lastname-label'>LastName</label>
+                    </div> */}
                   <input
                     className='lastname'
                     type='text'
-                   
+                   placeholder='Last Name'
                     name='lastName'
                     value={formik.values.lastName}
                     onChange={formik.handleChange}
@@ -120,14 +125,15 @@ const validationSchema = Yup.object().shape({
                     <div className='error'>{formik.errors.lastName}</div>
                   )}
                   </div>
-                  <div className='label3'>
+                  </div>
+                  {/* <div className='label3'>
                     <label >Email</label>
-                    </div>
+                    </div> */}
                   <div className='EEmail'>
                     <input
                       className='email'
                       type='email'
-                  
+                  placeholder='Email Address'
                       name='email'
                       value={formik.values.email}
                       onChange={formik.handleChange}
@@ -138,12 +144,12 @@ const validationSchema = Yup.object().shape({
                     )}
                   </div>
               
-                  <div className='label3'>
+                  {/* <div className='label3'>
                     <label >Password</label>
-                    </div>
+                    </div> */}
                     <Input.Password
                       className='password1'
-                   
+                   placeholder='Password'
                       name='password'
                       value={formik.values.password}
                       onChange={formik.handleChange}
@@ -154,13 +160,13 @@ const validationSchema = Yup.object().shape({
                       <div className='error'>{formik.errors.password}</div>
                     )}
                   
-                  <div className='label3'>
+                  {/* <div className='label3'>
                     <label >Confirm Password</label>
-                    </div>
+                    </div> */}
                     <Input.Password
-                      className='password2'
-                
+                      className='confirm-password'
                       name='confirmPassword'
+                      placeholder='Confirm Password'
                       value={formik.values.confirmPassword}
                       onChange={formik.handleChange}
                       onBlur={formik.handleBlur}
@@ -175,6 +181,10 @@ const validationSchema = Yup.object().shape({
                       Sign Up Now
                     </button>
                   </div>
+                  {error && (
+            <div className="error-message">
+              auth/email-already-in-use 
+            </div>)}
                 </form>
                 <div className='MModal'>
                   <p className='terms'>

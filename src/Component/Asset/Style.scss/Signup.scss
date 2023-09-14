@@ -1,0 +1,230 @@
+$primary-color: #F37357;
+$text-color: #192E46;
+$bg-color: #FFF;
+$shadow-color: rgba(0, 0, 0, 0.1);
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin form-style($width, $margin-top: 0) {
+  width: $width;
+  margin-top: $margin-top;
+  height: auto;
+  border: 1px solid #E0E4E9;
+  border-radius: 4px;
+  background: $bg-color;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.signUpContent {
+  width: 100%;
+  height: 93.66vh;
+  background-color: $primary-color;
+  background-image: url('../Image/bg.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 3%;
+}
+
+.signUpForm {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.formDiv {
+  @include flex-center;
+  width: 540px;
+  height: 556px;
+  background: #fff;
+  box-shadow: 0px 19.75px 70px 0px $shadow-color;
+}
+
+.form2 {
+  margin-top: -4%;
+}
+
+.form {
+  @include form-style(450px);
+}
+
+.signIn {
+  width: 223px;
+  height: 50px;
+  border: 1px solid #D4D7DD;
+  background: #FAFAFA;
+  color: #959DAD;
+  cursor: pointer;
+  margin-left: -10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.signUps {
+  width: 223px;
+  cursor: pointer;
+  height: 50px;
+  color: $text-color;
+  margin-left: 28%;
+  margin-top: -50%;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  background: none;
+}
+
+.SIG {
+  margin-left: 32%;
+  margin-top: -8%;
+}
+
+.feild {
+  margin: 30px;
+}
+
+.name {
+  @include form-style(170px, 10px);
+  color: #9AA6B4;
+  width: 160px;
+  height: 43px;
+  font-weight: 500;
+}
+
+.email {
+  @include form-style(367px, 6%);
+  width: 365px;
+  height: 40px;
+}
+
+.password1 {
+  @include form-style(380px, 2%);
+  flex-shrink: 0;
+  text-align: start;
+  height: 40px;
+}
+
+.confirm-password {
+  @include form-style(380px, 2%);
+  text-align: start;
+  height: 40px;
+
+}
+
+.S-BTN {
+  margin-top: 6%;
+}
+
+.EEmail {
+  margin-top: -3%;
+}
+
+.flx-box {
+  display: flex;
+}
+
+.lastname {
+  @include form-style(170px, 9px);
+  color: #9AA6B4;
+  font-weight: 500;
+  width: 160px;
+  margin-left: 30px;
+  height: 43px;
+}
+
+.signLogo {
+  width: 210px;
+  margin-top: -26px;
+}
+
+.MModal {
+  text-align: center;
+}
+
+.signbutton {
+  width: 380px;
+  margin-top: -3%;
+  height: 40px;
+  cursor: pointer;
+  background-color: $primary-color;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+}
+
+.terms {
+  color: $text-color;
+  font-size: 14px;
+  margin: 23px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  span {
+    color: #FB775A;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .signUpContent {
+    padding-top: 5%;
+    padding-bottom: 3%;
+  }
+
+  .signbutton {
+    width: 120px;
+  }
+
+  .form {
+    width: 90%;
+    height: 630px;
+  }
+
+  .signLogo {
+    width: 60%;
+  }
+
+  .S-BTN {
+    margin-top: 20px;
+    margin-left: -10%;
+  }
+
+  .formDiv {
+    width: 90%;
+    height: 650px;
+  }
+
+  .terms {
+    width: 100%;
+  }
+
+  .signIn {
+    width: 55%;
+  }
+
+  .signUps {
+    margin-left: 17%;
+    margin-top: -10px;
+  }
+
+  .SIG {
+    margin-top: -37px;
+  }
+
+  .feild {
+    margin-top: 18px;
+  }
+
+  .terms span {
+    margin-left: 20px;
+  }
+
+  .lastname {
+    margin-top: 10px;
+}}
