@@ -98,13 +98,13 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 .email {
-  @include form-style(367px, 6%);
+  @include form-style(367px, 7%);
   width: 365px;
   height: 40px;
 }
 
 .password1 {
-  @include form-style(380px, 2%);
+  @include form-style(380px, 3%);
   flex-shrink: 0;
   text-align: start;
   height: 40px;
@@ -112,7 +112,7 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 .confirm-password {
-  @include form-style(380px, 2%);
+  @include form-style(380px, 3%);
   text-align: start;
   height: 40px;
   width: 364px;
@@ -161,7 +161,13 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   border: none;
   font-size: 14px;
 }
-
+.error1{
+  color: #959DAD;
+    font-weight: 600;
+    margin-top: 6px;
+    text-align: center;
+ 
+}
 .terms {
   color: $text-color;
   font-size: 14px;
@@ -176,6 +182,12 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-weight: 600;
   }
+  .error {
+    color:  #959DAD;
+    font-weight: 600;
+    // margin-top: 6px;
+    text-align: start;
+  }
 }
 
 @media (max-width: 768px) {
@@ -185,12 +197,20 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   }
 
   .signbutton {
-    width: 120px;
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
   }
-
+.error1{
+  color: #959DAD;
+    font-weight: 600;
+    margin-top: 6px;
+    text-align: center;
+    margin-left: -255%;
+}
   .form {
     width: 90%;
-    height: 630px;
+    height: auto;
   }
 
   .signLogo {
@@ -202,26 +222,44 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     margin-left: -10%;
   }
-  .first{
-
+ 
+  .name{
+    width: 290px;
+    margin-left: -10%; 
   }
-  // .name{
-  //   width: 10%;
-  // }
-//   .lastname {
-//     width: %;
+  .lastname {
+    width:290px;
+        margin-left: -110%;
+        margin-top: 30%;
+  }
+  .email{
+    width: 290px;
+    margin-left: -10%;
+    margin-top: 13%;
+  }
+  .password1{
+    width: 290px;
+    margin-left: -10%;
+    margin-top: 13%;
+  }
+  .confirm-password{
+    width: 290px;
+    margin-left: -10%;
+    margin-top: 13%;
+  }
 
-//     margin-top: 78px;
-//     margin-left: -46%;
-// }
 
   .formDiv {
     width: 90%;
-    height: 650px;
+    height: auto;
   }
 
   .terms {
     width: 100%;
+    margin-left: -1%;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
   }
 
   .signIn {
@@ -243,6 +281,12 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 
   .terms span {
     margin-left: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 20px;
+
+  
   }
+ 
 
   }

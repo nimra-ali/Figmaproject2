@@ -118,7 +118,7 @@ const validationSchema = Yup.object().shape({
                     onBlur={formik.handleBlur}
                   />
                   {formik.touched.lastName && formik.errors.lastName && (
-                    <div className='error'>{formik.errors.lastName}</div>
+                    <div className='error1'>{formik.errors.lastName}</div>
                   )}
                   </div>
                   </div>

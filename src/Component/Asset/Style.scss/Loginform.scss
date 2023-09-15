@@ -35,12 +35,7 @@ $gray-color: #959DAD;
   background-position: center;
 }
 
-.error {
-  color: $gray-color;
-  font-weight: 600;
-  margin-top: 6px;
-  text-align: center;
-}
+
 
 .signUpFormm {
   @include center;
@@ -178,7 +173,7 @@ margin-top: 30px;
   .sign-button {
     margin-top: 30px;
     width: 290px;
-    margin-left: 13px;
+    margin-left: 18px;
     font-size: 20px;
   }
   .forget {

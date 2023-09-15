@@ -55,7 +55,7 @@ const Loginform = () => {
                 <Form>
 
                   <Field type="email" name="email" className='EMAIL' placeholder="Email" />
-                  <ErrorMessage name="email" component="div" className="error" />
+                  <ErrorMessage name="email" component="div" className="error-email" />
 
                   <div className="conFirm">
                     <Field className='PASSWORD'
@@ -70,7 +70,7 @@ const Loginform = () => {
                       {showPassword ? <EyeOutlined /> : <EyeInvisibleOutlined />}
                     </span>
 
-                    <ErrorMessage name="password" component="div" className="error" />
+                    <ErrorMessage name="password" component="div" className="error-passsword" />
                   </div>
                   <button className='sign-button' type="submit">Sign In Now</button>
                 </Form>
