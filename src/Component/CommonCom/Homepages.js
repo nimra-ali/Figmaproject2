@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Commondata from './Commondata';
 import Homestyle from './Homestyle';
 import ReactFullpage from "@fullpage/react-fullpage";
-import Lastpage from '../../LandingPages/Lastpage';
+import Lastpage from './Lastpage';
 
 
 import Navbar from "../CommonCom/Navbar";
@@ -41,12 +41,13 @@ function Homepages() {
                                     />
                                 </div>
                             ))}
+<Lastpage/>
+
                         </ReactFullpage.Wrapper>
                     )
                 }}
                 />
-                <Lastpage/>
         </div>
-    )
+)
 }
 export default Homepages;

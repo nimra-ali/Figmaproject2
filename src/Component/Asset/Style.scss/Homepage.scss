@@ -14,6 +14,9 @@ $bg-image: url('../Image/bg-white.png');
   font-weight: 1000;
 
 }
+.cottage-color{
+  color: $primary-color;
+}
 
 .mein {
   background-image: $bg-image;
@@ -113,15 +116,16 @@ $bg-image: url('../Image/bg-white.png');
     margin-top: 44px;
     margin-left: 2px;
   }
+  .h2{
+     margin-top: 24%;
+    text-align: center;
+    margin-left: -4%;
+  }
+  .buttonstyle{
+    display: flex;
+    margin-left: -40%;
+  }
 
   .nav-btn {
     margin-right: 20%;
-  }
-
-  .btn-comp {
-    margin-left: 9%;
-  }
-
-  .buttonstyle {
-    margin-left: 4%;
   }}

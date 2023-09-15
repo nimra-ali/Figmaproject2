@@ -42,8 +42,8 @@ console.log(image)
                           
 
                              btnText={button}/>):(null)}
-                         </div>
                        </div>
+                         </div>
                     </div>
                  
                     <div className='menuItemImg'>
