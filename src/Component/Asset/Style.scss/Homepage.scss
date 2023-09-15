@@ -107,9 +107,10 @@ $bg-image: url('../Image/bg-white.png');
 
   .menuItemImg {
     width: 100%;
-    height: auto;
-    margin-top: 20px;
-    margin-left: -10px;
+    height: 48vh;
+    margin-top: 24px;
+    margin-left: -6px;
+    // align-items: center;
 
   
   }
@@ -117,7 +118,7 @@ $bg-image: url('../Image/bg-white.png');
 
     font-size: 20px;
    margin: 20px;
-    margin-top: 20px;
+    margin-top: 51px;
     margin-left: -1%;
   text-align: center;
   }
