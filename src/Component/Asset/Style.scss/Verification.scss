@@ -3,6 +3,10 @@ $accent-color: #FB775A;
 $warning-bg: #FEAAAA;
 $warning-text: #FB5A5A;
 
+@mixin box-shadow {
+  box-shadow: 0px 19.75px 70px 0px rgba(0, 0, 0, 0.15);
+}
+
 @mixin text-style {
   color: $text-color;
   font-size: 16px;
@@ -23,6 +27,18 @@ $warning-text: #FB5A5A;
   height: 34.5px;
   padding: 5px;
   text-align: left;
+}
+.VERIFICATION-logo{
+  margin-left: 36%;
+}
+.forgetform2 {
+  margin-top: 13px;
+  width: 545px;
+  margin-left: 5%;
+  height: 510px;
+  background: #fff;
+  @include box-shadow;
+  border: 1px solid #f5dede;
 }
 
 .list2 {
@@ -64,4 +80,9 @@ $warning-text: #FB5A5A;
 @media (max-width: 768px) {
   .text-danger {
     @include warning-style;
-}}
+}
+.forgetform2{
+  width: auto;
+  margin-left: -3%;
+}
+}

@@ -59,19 +59,21 @@ $bg-color: #fff;
 }
 
 @media (max-width: 768px) {
-  .nav {
-    justify-content: space-between;
-  }
+ .nav{
+  height: 50px;
+  margin-top: -10px;
+ }
 
   .cottage {
-    margin: 2px;
+    margin: -2px;
     width: 60%;
-    margin-top: 1%;
+    margin-top: 4%;
   }
 
   .nav-btn {
     font-size: 15px;
-    margin: 27px;
+    margin: 23px;
     width: 100px;
     height: 40px;
+    margin-top: 19%;
 }}

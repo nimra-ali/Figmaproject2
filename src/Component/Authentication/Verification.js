@@ -24,10 +24,10 @@ function Verification() {
   return (
     <div className="forgetpswd">
       <div className="forget3">
-        <div className="forgetlogo">
+        <div className="VERIFICATION-logo">
           <img src={logo} alt="logo" />
         </div>
-        <div className="forgetform">
+        <div className="forgetform2">
           <div className="formforget part2">
             <h2>Verification Code</h2>
             <div className="forgetlist list2">

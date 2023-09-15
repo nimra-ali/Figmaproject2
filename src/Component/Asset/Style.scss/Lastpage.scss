@@ -13,13 +13,17 @@ $buttonColor: #F37357;
 
 .trackbg {
     width: 100%;
+  background-color: $accentColor;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Image/bg-white.png);
 }
 
 .mainDiv {
     width: 98%;
-    height: auto;
     @include centerContent;
     flex-direction: column;
+    
 
     .trackHead {
         width: 50%;
@@ -57,7 +61,6 @@ $buttonColor: #F37357;
     .trackImg {
         width: 1000px;
         height: 528px;
-        flex-shrink: 0;
         background-image: $trackImgUrl;
         margin-left: 30px;
     }
@@ -66,7 +69,6 @@ $buttonColor: #F37357;
         display: none;
         width: 900px;
         height: 300px;
-        flex-shrink: 0;
         background-image: $trackMediaUrl;
         background-size: cover;
         margin-left: 2px;
@@ -75,7 +77,6 @@ $buttonColor: #F37357;
     .trackBtn {
         width: 255px;
         height: 62px;
-        flex-shrink: 0;
         border-radius: 4px;
         background: $buttonColor;
         border: none;
@@ -96,7 +97,7 @@ $buttonColor: #F37357;
             width: 80%;
 
             h1 {
-                margin-top: -2%;
+                margin-top: -13%;
                 font-size: 31px;
             }
         }
@@ -115,10 +116,11 @@ $buttonColor: #F37357;
         .trackimg {
             width: 100%;
             display: block;
+            margin-top: 16px;
         }
 
         .trackBtn {
-            width: 90%;
+            width: 80%;
         }
 
         .performance {

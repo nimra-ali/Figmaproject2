@@ -39,7 +39,7 @@ const validationSchema = Yup.object().shape({
     validationSchema,
     onSubmit: async (values, { resetForm }) => {
       try {
-      
+        
         await createUserWithEmailAndPassword(auth, values.email, values.password);
 
         console.log('User registered successfully:', values.email);
@@ -91,10 +91,8 @@ const validationSchema = Yup.object().shape({
               <div className='feild'>
                 <form className='form2' onSubmit={formik.handleSubmit}>
                     <div className='flx-box'>
-                        {/* <div className='label1'>
-                    <label >FirstName</label>
-                    </div> */}
-                    <div>
+                      
+                    <div className='first'>
                   <input
                     className='name'
                     type='text'
@@ -108,10 +106,8 @@ const validationSchema = Yup.object().shape({
                       <div className='error'>{formik.errors.firstName}</div>
                     )}
                     </div>
-                    <div>
-                  {/* <div className='label2'>
-                    <label className='lastname-label'>LastName</label>
-                    </div> */}
+                    <div className='second'>
+                 
                   <input
                     className='lastname'
                     type='text'
@@ -126,9 +122,7 @@ const validationSchema = Yup.object().shape({
                   )}
                   </div>
                   </div>
-                  {/* <div className='label3'>
-                    <label >Email</label>
-                    </div> */}
+                 
                   <div className='EEmail'>
                     <input
                       className='email'
@@ -144,10 +138,7 @@ const validationSchema = Yup.object().shape({
                     )}
                   </div>
               
-                  {/* <div className='label3'>
-                    <label >Password</label>
-                    </div> */}
-                    <Input.Password
+                    <input
                       className='password1'
                    placeholder='Password'
                       name='password'
@@ -160,10 +151,8 @@ const validationSchema = Yup.object().shape({
                       <div className='error'>{formik.errors.password}</div>
                     )}
                   
-                  {/* <div className='label3'>
-                    <label >Confirm Password</label>
-                    </div> */}
-                    <Input.Password
+                 
+                    <input
                       className='confirm-password'
                       name='confirmPassword'
                       placeholder='Confirm Password'

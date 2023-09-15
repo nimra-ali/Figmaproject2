@@ -3,10 +3,8 @@ import Commondata from './Commondata';
 import Homestyle from './Homestyle';
 import ReactFullpage from "@fullpage/react-fullpage";
 import Lastpage from './Lastpage';
-
-
 import Navbar from "../CommonCom/Navbar";
-// import Lastpage from '../../LandingPages/Lastpage';
+
 
 
 function Homepages() {

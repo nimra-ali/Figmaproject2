@@ -92,6 +92,10 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   height: 43px;
   font-weight: 500;
 }
+.name:focus{
+
+  border: 1px solid #F37357
+}
 
 .email {
   @include form-style(367px, 6%);
@@ -104,12 +108,15 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
   text-align: start;
   height: 40px;
+  width: 364px;
 }
 
 .confirm-password {
   @include form-style(380px, 2%);
   text-align: start;
   height: 40px;
+  width: 364px;
+
 
 }
 
@@ -188,12 +195,25 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 
   .signLogo {
     width: 60%;
+    margin-top: 36px;
   }
 
   .S-BTN {
     margin-top: 20px;
     margin-left: -10%;
   }
+  .first{
+
+  }
+  // .name{
+  //   width: 10%;
+  // }
+//   .lastname {
+//     width: %;
+
+//     margin-top: 78px;
+//     margin-left: -46%;
+// }
 
   .formDiv {
     width: 90%;
@@ -225,6 +245,4 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     margin-left: 20px;
   }
 
-  .lastname {
-    margin-top: 10px;
-}}
+  }

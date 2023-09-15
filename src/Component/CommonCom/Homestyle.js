@@ -16,6 +16,7 @@ console.log(image)
                         <h1 className='h2'>{tittle}</h1>
                         <p className='menuPara'>{description}</p>
                         <div className='buttonstyle'>
+                           <div className='buttonstyle-2'>
                          {button?(<Buttoncomp 
                             bgclr='white'
                             width='190px'
@@ -30,6 +31,7 @@ console.log(image)
                        
 
                          btnText={button2}/>):(null)}
+                         </div>
                          <div className='btn-comp'>
                          {button2?(<Buttoncomp 
                              bgclr='#F37357'
@@ -54,3 +56,4 @@ console.log(image)
 )
 }
 export default Homestyle;
+
