@@ -182,12 +182,7 @@ $shadow-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
     font-weight: 600;
   }
-  .error {
-    color:  #959DAD;
-    font-weight: 600;
-    // margin-top: 6px;
-    text-align: start;
-  }
+ 
 }
 
 @media (max-width: 768px) {
@@ -199,10 +194,10 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   .signbutton {
     width: 100%;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: -3px;
   }
 .error1{
-  color: #959DAD;
+  color:$primary-color;
     font-weight: 600;
     margin-top: 6px;
     text-align: center;
@@ -224,28 +219,28 @@ $shadow-color: rgba(0, 0, 0, 0.1);
   }
  
   .name{
-    width: 290px;
+    width: 260px;
     margin-left: -10%; 
   }
   .lastname {
-    width:290px;
+    width:260px;
         margin-left: -110%;
         margin-top: 30%;
   }
   .email{
-    width: 290px;
+    width: 260px;
     margin-left: -10%;
-    margin-top: 13%;
+    margin-top: 7%;
   }
   .password1{
-    width: 290px;
+    width: 260px;
     margin-left: -10%;
-    margin-top: 13%;
+    margin-top: 4%;
   }
   .confirm-password{
-    width: 290px;
+    width: 260px;
     margin-left: -10%;
-    margin-top: 13%;
+    margin-top: 5%;
   }
 
 
