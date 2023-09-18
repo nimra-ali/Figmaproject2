@@ -38,14 +38,16 @@ $border-color: salmon;
 }
 
 .forgetlogo {
+  margin-top: -12px;
 margin-left: -39%;
 }
 
 .forgetform {
-  margin-top: 13px;
+  // margin-top: 2px;
   width: 545px;
   margin-left: -66%;
-  height: 510px;
+  height: auto;
+  // height: 510px;
   background: #fff;
   @include box-shadow;
   border: 1px solid #f5dede;
@@ -54,7 +56,8 @@ margin-left: -39%;
 .formforget {
   margin: 35px;
   border: 1px solid rgb(215, 210, 210);
-  height: 89%;
+  // height: 89%;
+  height: au;
 
   h2 {
     text-align: center;
@@ -111,23 +114,27 @@ margin-left: -39%;
 
 @media (max-width: 768px) {
   .forgetform input {
-    margin: 22px;
+    margin: 19px;
   }
   .forgetform {
     width: auto;
+    height: auto;
     margin-left: -3%;
   }
   .forgetform button {
-    margin: -6px 22px;
+    margin-left: 5%;
+    // margin: -6px 22px;
   }
   .forgetlogo {
     margin-top: -10%;
+    // text-align: center;
+    margin-left: -70%;
   }
   .forgetlist {
     margin: 30px;
     cursor: pointer;
     margin-top: 58px;
-    text-align: center;
+    // text-align: center;
     color: $primary-color;
     font-size: 10px;
     font-weight: 800;
